@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false">
+</script>
+<script language="javascript">
+    function InitializeMap() {
+        var latlng = new google.maps.LatLng(-34.397, 150.644);
+        var myOptions = {
+            zoom: 8,
+            center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"), myOptions);
+        var marker = new google.maps.Marker;
+        google.maps.event.addListener(marker, 'click', function () {
+            // Calling the open method of the infoWindow 
+            alert(point.x + '--' + point.y);
+        });
+    }
+    window.onload = InitializeMap;
+</script>
+ </head>
+
+ <body>
+ <div id=map style='width:400px;height:600px;border:1px solid #CCC;'>
+ </div>
+ <!--
+  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true_or_false&amp;key=ABQIAAAAOnI_Uj4eTbCHArbpYmHllhTLwEBNQvjmiYZfEDCJ6fB-dcmibRS2Lit_2guT-sQ7uoVuS01vFUdRXA" type="text/javascript"></script>
+  -->
+
+ </body>
+</html>
