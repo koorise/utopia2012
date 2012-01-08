@@ -1,0 +1,14 @@
+﻿/* 分页 */
+.pages{overflow:hidden; zoom:1; font-size:12px; font-family:"宋体",sans-serif; margin-top:10px; width:680px;}
+.pages span{float:left; margin-right:2px; overflow:hidden; text-align:center; background:#fff;}
+.pages span a{display:block; overflow:hidden; zoom:1; _float:left;}   
+.pages span.pagebox_nav{color:#3568b9; height:23px;}
+.pages span.pagebox_info{color:#3568b9; height:23px; line-height:23px}
+.pages span.pagebox_nav a,.pagebox span.pagebox_nav a:visited{border:1px #9aafe5 solid; color:#3568b9; text-decoration:none; text-align:center; width:53px; cursor:pointer; height:21px; line-height:21px;}
+.pages span.pagebox_nav a:hover,.pagebox span.pagebox_nav a:active{color:#363636; border:1px #2e6ab1 solid;}
+.pages span.pagebox_num_nonce{padding:0 8px; height:23px; line-height:23px; color:#fff; cursor:default; background:#296cb3; font-weight:bold;}
+.pages span.pagebox_num{color:#3568b9; height:23px;}
+.pages span.pagebox_num a,.pagebox span.pagebox_num a:visited{border:1px #9aafe5 solid; color:#3568b9; text-decoration:none; padding:0 8px; cursor:pointer; height:21px; line-height:21px;}
+.pages span.pagebox_num a:hover,.pagebox span.pagebox_num a:active{border:1px #2e6ab1 solid;color:#363636;}
+.pages span.pagebox_num_ellipsis{color:#393733; width:22px; background:none; line-height:23px;}
+.pages span.pagebox_nolink{border:1px #ddd solid; width:53px; height:21px; line-height:21px; text-align:center; color:#999; cursor:default;}

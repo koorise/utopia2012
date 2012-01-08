@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/ZPageBase_MainChannel.master" AutoEventWireup="true" CodeBehind="ZPageBase_MainChannel_Help.master.cs" Inherits="GK2010.Web.ZPageBase_MainChannel_Help" %>
+<%@ MasterType VirtualPath="ZPageBase.Master" %> 
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="/css/help/help.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
+    <gk:Navigator ID="Navigator1" runat="server" />
+    <div class="main m_center help">
+        <div class="left ">
+            <div class="left_first">
+                <div class="hd">
+                    <h2>帮助中心</h2>
+                </div>
+                <div class="bd">
+                    <div class="cat-content">
+                        <ul>
+                            <asp:Repeater ID="RepeaterList" runat="server" OnItemDataBound="RepeaterList_ItemDataBound">
+                                <ItemTemplate><asp:Literal ID="txtTitle" runat="server"></asp:Literal></ItemTemplate>
+                            </asp:Repeater>
+                        </ul>
+                    </div>
+                   
+                </div>
+                <div class="ft">
+                </div>
+            </div>
+        </div>
+        <div class="right help_list">
+            <asp:ContentPlaceHolder ID="Main" runat="server" />
+        </div>
+    </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="BootOther" runat="server">
+    <asp:ContentPlaceHolder ID="BootOther" runat="server" />
+</asp:Content>

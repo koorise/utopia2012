@@ -1,0 +1,195 @@
+@import url("/css/share.css");
+@import url("/css/index.css");
+@import url("/css/Base.css");
+
+/* ×ÊÖúÑ¡ÐÍ */
+
+
+.grant
+{
+	float: left;
+}
+
+.grant .left
+{
+	width: 739px;
+	float: left;
+}
+
+
+
+.grant .left .hd
+{
+	background: url(/images/zizhu_tit.jpg) no-repeat;
+	height: 31px;
+	color: #2963B8;
+	font-weight: bold;
+}
+
+.grant .left .hd table
+{
+	float: right;
+	margin: 5px 15px 5px 5px;
+}
+.grant .left .hd table td
+{
+	padding: 2px 5px;
+}
+
+
+.grant .left .bd
+{
+	border-left: 1px solid #CAE6F4;
+	border-right: 1px solid #CAE6F4;
+	padding: 8px auto;
+}
+
+
+.grant .left .bd .cont
+{
+	position: relative;
+	padding: 8px;
+	margin-left: 10px;
+	width: 695px;
+	padding: 10px;
+}
+.grant .left .bd .cont .bd_hd
+{
+	background: url(/images/h2_tit04.jpg) no-repeat;
+	height: 30px;
+	margin: 8px;
+}
+
+.grant .left .bd .cont .bd_hd h2
+{
+	line-height: 30px;
+	color: #285AB3;
+	font-size: 14px;
+	line-height: 33px;
+	font-weight: bold;
+	padding-left: 45px;
+}
+
+
+.grant .left .bd .h2_tit
+{
+	line-height: 24px;
+	margin: 8px 0 8px 8px;
+	width: 599px;
+}
+.grant .left .bd .h2_tit h2
+{
+	color: #285AB3;
+	font-size: 12px;
+	background: url(/images/h2_tit05.jpg) no-repeat;
+	font-weight: bold;
+	padding-left: 25px;
+}
+
+.grant .left .bd .h2_tit h2 span
+{
+	float: right;
+	margin: 0 5px;
+	font-weight: normal;
+}
+
+.grant .left .bd .bd_ul
+{
+	width: 597px;
+	border: 1px solid #CAE6F4;
+	border-top: none;
+	position: relative;
+}
+
+.grant .left .bd .bd_ft
+{
+	background: url(/images/ft02.jpg) no-repeat right bottom;
+	position: absolute;
+	height: 24px;
+	bottom: -1px;
+	right: -1px;
+	width: 45px;
+}
+
+
+
+.grant .left .bd .cont ul
+{
+	margin: 5px;
+}
+
+.grant .left .bd .cont li
+{
+	height: 23px;
+	line-height: 23px;
+}
+
+
+
+
+
+
+
+
+.grant .left .ft
+{
+	background: url(/images/zizhu_bottom.jpg) no-repeat;
+	height: 11px;
+}
+
+
+
+
+
+
+.grant .right
+{
+	width: 208px;
+	float: right;
+	border: 1px solid #CCE1F4;
+	background: #F3F6FC;
+}
+
+.grant .right .hd
+{
+	background: url(/images/h2_tit03.jpg) no-repeat;
+	height: 30px;
+}
+
+.grant .right .hd h2
+{
+	padding-left: 35px;
+	color: #285AB3;
+	font-size: 14px;
+	line-height: 33px;
+	font-weight: bold;
+}
+
+.grant .right .bd table
+{
+	margin: 8px auto;
+}
+
+.grant .right .bd table td
+{
+	padding: 2px 8px;
+}
+
+.grant .right .bd .bg
+{
+	background: url(/images/bg04.jpg) no-repeat;
+	height: 33px;
+	color: #285AB3;
+	font-size: 14px;
+	line-height: 33px;
+	font-weight: bold;
+}
+
+.grant .right .bd ul
+{
+}
+
+.grant .right .bd li a
+{
+	color: #1E63AF;
+}

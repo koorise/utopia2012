@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/ZPageBase.Master" AutoEventWireup="true" CodeBehind="ZPageBase_Member.master.cs" Inherits="GK2010.Web.ZPageBase_Member" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="/css/member.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
+    <!-- top start -->
+    <gk:Top ID="Top1" runat="server" />
+    <!-- top end-->
+    <div class="main">
+        <div class="message"><asp:ContentPlaceHolder ID="Position" runat="server" /></div>
+    </div>
+    <div class="member mdT8">
+        <div class="left">
+            <div class="left_top">
+                <div class="hd">
+                </div>
+                <div class="bd">
+                    <table class="wp90 m_center" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="B orange">
+                                <asp:Literal ID="litUserName" runat="server"></asp:Literal>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                你好：工控商城欢迎你
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                会员级别：<asp:Literal ID="litGroupName" runat="server"></asp:Literal>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                会员积分：<asp:Literal ID="litCredit" runat="server"></asp:Literal>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="ft">
+                </div>
+            </div>
+            <div class="left_second mdT8">
+                <div class="hd">
+                    交易管理</div>
+                <div class="bd">
+                    <ul>
+                        <li><a href="/member/memberorder/">订单管理</a></li>
+                        <li><a href="/member/memberorder/search.aspx">订单查询</a></li>
+                        <li><a href="/member/memberorder/">订单管理</a></li>
+                        <li><a href="/member/memberorder/">订单管理</a></li>
+                    </ul>
+                </div>
+                <div class="ft">
+                </div>
+            </div>
+             <div class="left_second mdT8">
+                <div class="hd">
+                    站内信</div>
+                <div class="bd">
+                    <ul>
+                        <li><a href="/member/MemberMessages/receive.aspx">收件箱</a></li>
+                        <li><a href="/member/MemberMessages/send.aspx">发件箱</a></li>
+                        <li><a href="/member/MemberMessages/create.aspx">新建信件</a></li>
+                    </ul>
+                </div>
+                <div class="ft">
+                </div>
+            </div>
+            <div class="left_second mdT8">
+                <div class="hd">
+                    购物车</div>
+                <div class="bd">
+                    <ul>
+                        <li class="color"><a href="购物车详情.asp">购物车详情</a></li>
+                        <li><a href="我的收藏夹.asp">我的收藏夹 </a></li>
+                    </ul>
+                </div>
+                <div class="ft">
+                </div>
+            </div>
+            <div class="left_second mdT8">
+                <div class="hd">
+                    个人应用管理</div>
+                <div class="bd">
+                    <ul>
+                        <li><a href="/member/update_data.aspx">资料修改</a></li>
+                        <li><a href="/member/changepassword.aspx">密码修改</a></li>
+                        <li><a href="/member/MemberConsignee/">常用收货人</a></li>
+                        <li><a href="/member/MemberInvoice/">常用发票</a></li>
+                        <li><a href="/member/MemberInvoiceMail/">常用发票邮寄信息</a></li>
+                    </ul>
+                </div>
+                <div class="ft">
+                </div>
+            </div>
+            <div class="left_second mdT8">
+                <div class="hd">
+                    我的问答</div>
+                <div class="bd">
+                    <ul>
+                        <li class="color"><a href="/member/MemberQa/">我提出的问题</a></li>
+                        <li><a href="/member/MemberQa/">我回答过的提问</a></li>
+                        <li><a href="/Member/MemberComment/">我的评论 </a></li>
+                    </ul>
+                </div>
+                <div class="ft">
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right_cont">
+                <div class="hd"></div>
+                <div class="bd">
+                    <asp:ContentPlaceHolder ID="Main" runat="server" />
+                </div>
+                <div class="ft">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- boot start -->
+    <gk:Boot ID="Boot1" runat="server" />
+    <!-- boot end -->
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="BootOther" runat="server">
+    <asp:ContentPlaceHolder ID="BootOther" runat="server" />
+</asp:Content>

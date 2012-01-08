@@ -1,0 +1,96 @@
+#container {position:relative }
+#windown-ok {
+	background:url(/images/tipwindown/btn_gray_small.jpg) no-repeat;
+	height:21px;
+	line-height:21px;
+	width:50px;
+	border:none;
+	color:#222;  
+	font-weight:bold;
+	cursor:pointer;
+	display:block;
+}
+
+#windownbg {
+	width: 100%;
+	display: none;
+	background: #000; /*body-bg*/
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+#windown-box {
+	border:1px solid #72AEE4;
+	background: #FFF;
+	text-align: left;
+	position: fixed;
+	_position: absolute; /*For IE 6.0*/
+}
+
+
+#windown-title {
+	border: 1px solid #A6C9E1;
+	background:url(/images/tipwindown/pop_up_bg01.jpg) repeat-x;
+	height:29px;
+	line-height:29px;
+	position: relative;
+	overflow: hidden;
+}
+
+#windown-title h2 
+{
+	line-height:29px;
+	color:#fff;
+	height:29px;
+	font-weight:bold;
+	left:10px;
+	font-size: 14px;
+	position: relative;
+	
+}
+
+#windown-close 
+{
+	background:url(/images/tipwindown/tubiao06.jpg) no-repeat top;
+	width:33px;
+	height:18px;
+	cursor:pointer;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+}
+
+
+
+#windown-content {
+	text-align: center;
+	position: relative;
+	overflow: auto;
+}
+
+#windown-content .loading {
+	margin-left: -8px;
+	margin-top: -8px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+#windown-bottom {
+	background:url(/images/tipwindown/bg04.jpg) repeat-x;
+	height:30px;
+	line-height:30px;
+	position: relative;
+}
+#windown-bottom div
+{
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	position: absolute;	
+	top:4px;
+	right: 10px;
+	
+}

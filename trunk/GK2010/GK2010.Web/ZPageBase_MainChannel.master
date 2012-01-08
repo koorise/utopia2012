@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/ZPageBase.Master" AutoEventWireup="true" CodeBehind="ZPageBase_MainChannel.master.cs" Inherits="GK2010.Web.ZPageBase_MainChannel" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">    
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
+        <!-- top start -->
+        <gk:Top ID="Top1" runat="server" />
+        <!-- top end-->
+        <asp:ContentPlaceHolder ID="Main" runat="server" />
+        <!-- help start -->
+        <gk:BootHelp ID="BootHelp1" runat="server" />  
+        <!-- help end -->
+        <!-- friendlink start -->
+        <gk:BootFriendLink ID="BootFriendLink1" runat="server" />
+        <!-- friendlink end -->
+        <!-- foot start -->
+        <gk:Boot ID="Boot1" runat="server" />
+        <!-- foot end -->
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="BootOther" runat="server">
+    <asp:ContentPlaceHolder ID="BootOther" runat="server" />
+</asp:Content>

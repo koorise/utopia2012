@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ControlNavigator.ascx.cs" Inherits="GK2010.Web.Controls.ControlNavigator" %>
+<div class="navigator">当前位置：<a href="/">首页</a><asp:Literal ID="txtNavigator" runat="server"></asp:Literal></div>

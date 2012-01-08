@@ -1,0 +1,208 @@
+/*product*/
+
+
+.product_top
+{
+	background: #144899;
+	float: left;
+}
+
+
+
+.product
+{
+}
+
+.product .product_left
+{
+	float: left;
+	width: 733px;
+}
+
+.product .product_right
+{
+	float: right;
+	width: 219px;
+}
+
+
+.product .left1, .product.left2
+{
+	background: #F9FAFC;
+	border: 1px solid #D3DDEB;
+	border-top: 1px solid #D3DDEB;
+	float: left;
+}
+.product .left1 .hd, .product.left2 .hd
+{
+	background: url(/images/p_tit.jpg) no-repeat;
+	height: 30px;
+	line-height: 30px;
+	width: 733px;
+	color: #000000;
+}
+
+.product .left1 .hd h2, .product.left2 .hd h2
+{
+	padding-left: 30px;
+	font-weight: bold;
+}
+
+.product .left1 .bd, .product.left2 .bd
+{
+	background: url(/images/p_bd_bg.jpg) no-repeat #fff;
+	width: 700px;
+	margin: 5px;
+	margin-left: 8px;
+	padding-left: 20px;
+	float: left;
+	overflow: hidden;
+}
+.product .left1 .bd h2, .product.left2 .bd h2
+{
+	color: #D30000;
+	font-weight: bold;
+	font-size: 12px;
+}
+.product .left1 .bd h2 a, .product.left2 .bd h2 a
+{
+	color: #D30000;
+	font-weight: bold;
+	font-size: 12px;
+}
+.product .left1 .bd ul, .product.left2 .bd ul
+{
+	color: #D30000;
+	width: 690px;
+	overflow: hidden;
+}
+.product .left1 .bd li, .product.left2 .bd li
+{
+	float: left;
+	margin: 2px 4px;
+	background: url(/images/line04.jpg) no-repeat right center;
+	padding-right: 3px;
+	padding-left: 3px;
+	width: 100px;
+	overflow: hidden;
+}
+
+.product .left1 .bd li a, .product.left2 .bd li a
+{
+	color: #2546A5;
+}
+
+
+.product .left1 .hd2
+{
+	float: left;
+	border: 1px solid #A9B4CB;
+	border-right: none;
+	border-left: none;
+}
+
+.product .left1 .hd2 ul
+{
+	float: left;
+	font-weight: bold;
+}
+
+.product .left1 .hd2 li
+{
+	float: left;
+	background: url(/images/bg02.jpg) no-repeat;
+	width: 27px;
+	height: 24px;
+	line-height: 24px;
+	font-family: Tahoma, Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+
+.product_right .right1
+{
+	border: 1px solid #DDDDDD;
+	float: left;
+}
+
+.product_right .right1 h2
+{
+	background: url(/images/tit_bg04.jpg) no-repeat;
+	height: 25px;
+	color: #1E408E;
+	line-height: 24px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+
+.product_right .right1 h2 span
+{
+	float: right;
+	margin: 0 6px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.product_right .right1 h2 span a
+{
+	color: #333;
+}
+
+.product_right .right1 .bd
+{
+	margin-top: 8px;
+}
+
+.product_right .right1 .bd dl
+{
+	margin-left: 5px;
+}
+
+.product_right .right1 .bd dt
+{
+	float: right;
+	width: 118px;
+	margin: 0 5px 0 0;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.product_right .right1 .bd dd.img
+{
+	float: left;
+	margin: 0 3px 0 0;
+}
+
+
+.product_right .right1 .bd dd.img img
+{
+	width: 75px;
+	height: 75px;
+	padding: 2px;
+	border: 1px solid #ddd;
+}
+.product_right .right1 .bd dd.dd
+{
+	float: left;
+	width: 120px;
+}
+
+
+.product_right .right1 .bd ul
+{
+	clear: both;
+	margin: 5px;
+	padding: 5px;
+}
+
+
+.product_right .right1 .bd li
+{
+	background: url(/images/dian01.jpg) no-repeat scroll left center transparent;
+	clear: both;
+	height: 24px;
+	line-height: 24px;
+	padding-left: 10px;
+}
+
+

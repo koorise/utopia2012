@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ControlCheckCode.ascx.cs" Inherits="GK2010.Web.Controls.ControlCheckCode" %>
+<img id="imgVerify" src="/CheckCode.aspx?" alt="看不清？点击更换" onclick="this.src=this.src+'?'" align="absmiddle" style="cursor:pointer" /><a href="javascript:void(0)" onclick="$('#imgVerify').attr('src','/CheckCode.aspx?temp='+Math.random())" class="Ablue">看不清？换一张</a>

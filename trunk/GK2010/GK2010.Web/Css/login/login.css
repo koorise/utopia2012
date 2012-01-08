@@ -1,0 +1,194 @@
+@import url("/css/share.css");
+@import url("/css/index.css");
+@import url("/css/base.css");
+@import url("/css/ok.css");
+.bg03
+{
+	background: url(/images/bg03.jpg) no-repeat;
+	width: 541px;
+	height: 355px;
+}
+.table
+{
+	background: url(/images/login_kuan.jpg) no-repeat;
+	height: 300px;
+	width: 330px;
+}
+
+.table .td1
+{
+	height: 37px;
+	padding-left: 25px;
+	color: #252525;
+	line-height: 40px;
+}
+.table .td2
+{
+	height: 232px;
+}
+
+.login-box
+{
+	margin: 0;
+	padding: 0;
+	top: 0;
+}
+.login-box table
+{
+	margin-top: 25px;
+	padding: 0;
+	margin-left: 15px;
+}
+
+
+
+
+.login-box .label
+{
+	padding-right: 2px;
+	text-align: right;
+	vertical-align: top;
+	white-space: nowrap;
+	width: 150px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+
+.login-box .label em
+{
+	color: red;
+	margin: 0 5px;
+}
+
+
+
+.login-box .text_g
+{
+	border: 1px solid #bbb;
+	font-family: arial, "ËÎÌו";
+	font-size: 14px;
+	height: 16px;
+	padding-bottom: 4px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 4px;
+}
+
+
+.login-box .status
+{
+	padding-left: 2px;
+	padding-top: 0px;
+	vertical-align: middle;
+	width: 250px;
+}
+
+
+
+.login-box .w_50
+{
+	width: 50px;
+	font-size: 18px;
+	font-family: Arial;
+	color: #FF6600;
+}
+
+
+
+
+.login-box .field
+{
+	vertical-align: middle;
+}
+
+
+.login-box .f_left
+{
+	float: left;
+	font: 12px;
+	display: inline;
+}
+.login-box .f_left lable
+{
+	float: left;
+}
+
+
+
+.login-box .field .ic-btn
+{
+	font-size: 12px;
+	display: inline;
+}
+
+.login-box .zi em
+{
+	font-size: 24px;
+	font-family: Arial;
+	color: #FF6600;
+	margin: 0 5px;
+	font-style: normal;
+}
+
+.login-box .text
+{
+	border: 1px solid #FF6633;
+	height: 18px;
+	line-height: 18px;
+	margin-right: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 3px;
+	vertical-align: middle;
+	width: 160px;
+}
+
+.login-box .text:hover
+{
+	border: 1px solid #2549A6;
+}
+
+
+.login-box .ft1
+{
+	width: 300px;
+	margin: 10px auto;
+	padding: 8px 0 20px 30px;
+	color: #2549A6;
+	background: url(/images/line05.jpg) no-repeat top;
+}
+
+
+.plan .hd
+{
+	position: relative;
+}
+
+.plan .hd .hd_top
+{
+	position: absolute;
+	background: url(/images/login_tit.jpg) no-repeat;
+	width: 151px;
+	height: 29px;
+	top: -26px;
+	left: 25px;
+}
+
+.button05
+{
+	background: url(/images/button05.jpg) no-repeat;
+	width: 165px;
+	height: 77px;
+	border: 0;
+	cursor: pointer;
+}
+
+.md25
+{
+	margin-top: 25px;
+}

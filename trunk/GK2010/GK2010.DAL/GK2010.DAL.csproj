@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DDF2CB1C-7870-4838-A6FA-3B8A041FE102}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GK2010.DAL</RootNamespace>
+    <AssemblyName>GK2010.DAL</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Brand.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="ConfigABC.cs" />
+    <Compile Include="ConfigCity.cs" />
+    <Compile Include="ConfigIP.cs" />
+    <Compile Include="ConfigLog.cs" />
+    <Compile Include="ConfigMessageEmail.cs" />
+    <Compile Include="ConfigMessageMobile.cs" />
+    <Compile Include="ConfigProvince.cs" />
+    <Compile Include="ConfigResultMsg.cs" />
+    <Compile Include="ConfigSeo.cs" />
+    <Compile Include="FriendLink.cs" />
+    <Compile Include="Help.cs" />
+    <Compile Include="HelpCategory.cs" />
+    <Compile Include="Library_Industry.cs" />
+    <Compile Include="Library_Tag.cs" />
+    <Compile Include="Member.cs" />
+    <Compile Include="MemberCart.cs" />
+    <Compile Include="MemberCartDetail.cs" />
+    <Compile Include="MemberGroup.cs" />
+    <Compile Include="MemberProductBrowse.cs" />
+    <Compile Include="MemberProductEvaluate.cs" />
+    <Compile Include="MemberProductFavorites.cs" />
+    <Compile Include="MemberProvince.cs" />
+    <Compile Include="MemberRelation.cs" />
+    <Compile Include="MemberValid.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductCache.cs" />
+    <Compile Include="ProductCategory.cs" />
+    <Compile Include="ProductJF.cs" />
+    <Compile Include="ProductMemberDiscount.cs" />
+    <Compile Include="ProductParts.cs" />
+    <Compile Include="ProductPartsCache.cs" />
+    <Compile Include="ProductPicture.cs" />
+    <Compile Include="ProductSpecial.cs" />
+    <Compile Include="ProductVirtual.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemPermission.cs" />
+    <Compile Include="SystemTree.cs" />
+    <Compile Include="SystemTree_Group.cs" />
+    <Compile Include="Tech.cs" />
+    <Compile Include="TechCategory.cs" />
+    <Compile Include="Virtual.cs" />
+    <Compile Include="VirtualCategory.cs" />
+    <Compile Include="Down.cs" />
+    <Compile Include="DownCategory.cs" />
+    <Compile Include="News.cs" />
+    <Compile Include="NewsCategory.cs" />
+    <Compile Include="ConfigIndustry.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ConfigMedium.cs" />
+    <Compile Include="Library_Medium.cs" />
+    <Compile Include="QaCategory.cs" />
+    <Compile Include="Qa.cs" />
+    <Compile Include="Slide.cs" />
+    <Compile Include="SlideCategory.cs" />
+    <Compile Include="ConfigNavigator.cs" />
+    <Compile Include="AD.cs" />
+    <Compile Include="ADCategory.cs" />
+    <Compile Include="MemberOrder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GK2010.Model\GK2010.Model.csproj">
+      <Project>{3AD35F40-71F4-48B7-8F1A-02020A7899B2}</Project>
+      <Name>GK2010.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GK2010.Utility\GK2010.Utility.csproj">
+      <Project>{4552A52B-7231-4D3D-AF56-8C16DAC51913}</Project>
+      <Name>GK2010.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
