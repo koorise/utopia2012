@@ -1,0 +1,20 @@
+E:\VisualStudio\Product2008\GK2011\GK2010.Utility\obj\Debug\ResolveAssemblyReference.cache
+E:\VisualStudio\Product2008\GK2011\GK2010.Utility\bin\Debug\GK2010.Utility.dll
+E:\VisualStudio\Product2008\GK2011\GK2010.Utility\bin\Debug\GK2010.Utility.pdb
+E:\VisualStudio\Product2008\GK2011\GK2010.Utility\obj\Debug\GK2010.Utility.dll
+E:\VisualStudio\Product2008\GK2011\GK2010.Utility\obj\Debug\GK2010.Utility.pdb
+E:\WebSite Developer\GK2011\GK2011\GK2010.Utility\bin\Debug\GK2010.Utility.dll
+E:\WebSite Developer\GK2011\GK2011\GK2010.Utility\bin\Debug\GK2010.Utility.pdb
+E:\WebSite Developer\GK2011\GK2011\GK2010.Utility\obj\Debug\ResolveAssemblyReference.cache
+E:\WebSite Developer\GK2011\GK2011\GK2010.Utility\obj\Debug\GK2010.Utility.dll
+E:\WebSite Developer\GK2011\GK2011\GK2010.Utility\obj\Debug\GK2010.Utility.pdb
+D:\projects\GK2011_bz\GK2010.Utility\bin\Debug\GK2010.Utility.dll
+D:\projects\GK2011_bz\GK2010.Utility\bin\Debug\GK2010.Utility.pdb
+D:\projects\GK2011_bz\GK2010.Utility\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\GK2011_bz\GK2010.Utility\obj\Debug\GK2010.Utility.dll
+D:\projects\GK2011_bz\GK2010.Utility\obj\Debug\GK2010.Utility.pdb
+D:\2011.09\GK2010\GK2010.Utility\bin\Debug\GK2010.Utility.dll
+D:\2011.09\GK2010\GK2010.Utility\bin\Debug\GK2010.Utility.pdb
+D:\2011.09\GK2010\GK2010.Utility\obj\Debug\ResolveAssemblyReference.cache
+D:\2011.09\GK2010\GK2010.Utility\obj\Debug\GK2010.Utility.dll
+D:\2011.09\GK2010\GK2010.Utility\obj\Debug\GK2010.Utility.pdb

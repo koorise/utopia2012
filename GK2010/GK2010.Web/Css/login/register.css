@@ -1,0 +1,572 @@
+@import url("/css/Base.css");
+@import url("/css/share.css");
+@import url("/css/index.css");
+body
+{
+	font-size: 12px;
+	line-height: 22px;
+	margin: 0;
+	padding: 0;
+	background: url(/images/body_bg.jpg) repeat-x;
+}
+
+.nes
+{
+	color: #c00;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.top_bg
+{
+	background: url(/images/top_bg.jpg) repeat-x;
+	height: 27px;
+	line-height: 27px;
+}
+
+
+.top_bg01
+{
+	background: url(/images/top_bg01.jpg) no-repeat;
+	height: 27px;
+	line-height: 27px;
+	padding-left: 30px;
+	width: 350px;
+}
+
+.top_bg01 span
+{
+	float: right;
+}
+
+.register
+{
+	width: 804px;
+	margin: 10px auto;
+}
+
+
+.register .hd
+{
+	background: url(/images/register_tit.jpg) no-repeat;
+	height: 39px;
+	width: 789px;
+}
+
+
+
+.register .bd .table
+{
+	width: 804px;
+}
+
+
+.register .bd .table .top
+{
+	background: url(/images/register_tit1.jpg) no-repeat;
+	height: 8px;
+}
+.register .bd .table .middle
+{
+	background: url(/images/register_center.jpg) repeat-y;
+}
+.register .bd .table .bottom
+{
+	background: url(/images/register_bottom.jpg) no-repeat;
+	height: 39px;
+}
+
+.register .bd .table .tit_h2
+{
+	border-bottom: 2px solid #EEEEDD;
+	padding: 5px;
+	padding-left: 10px;
+	margin-top: 18px;
+	margin-left: 17px;
+}
+.register .bd .table .td2 .tit_h2 h2
+{
+	font-weight: bold;
+}
+
+
+.register .register_cont
+{
+	margin: 0;
+	padding: 0;
+	top: 0;
+}
+.register .register_cont table
+{
+	margin-top: 25px;
+	padding: 0;
+	margin-left: 15px;
+}
+
+
+
+
+.forgot .forgot_cont .label, .register .register_cont .label
+{
+	padding-right: 2px;
+	text-align: right;
+	vertical-align: top;
+	white-space: nowrap;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+
+.register .register_cont .label em
+{
+	color: red;
+	margin: 0 5px;
+}
+
+
+
+.register .register_cont .text_g
+{
+	border: 1px solid #bbb;
+	font-family: arial, "宋体";
+	font-size: 14px;
+	height: 16px;
+	padding-bottom: 4px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 4px;
+}
+
+
+.forgot .forgot_cont .status, .register .register_cont .status
+{
+	padding-left: 2px;
+	padding-top: 0px;
+	vertical-align: middle;
+	width: 250px;
+}
+
+
+
+.register .register_cont .w_50
+{
+	width: 50px;
+	font-size: 18px;
+	font-family: Arial;
+	color: #FF6600;
+}
+
+
+
+
+.forgot .forgot_cont .field, .register .register_cont .field
+{
+	vertical-align: middle;
+}
+
+
+.register .register_cont .f_left
+{
+	float: left;
+	font: 12px;
+	display: inline;
+}
+.register .register_cont .f_left lable
+{
+	float: left;
+}
+
+
+
+.register_cont .field .ic-btn
+{
+	font-size: 12px;
+	display: inline;
+}
+
+.register_cont .zi em
+{
+	font-size: 24px;
+	font-family: Arial;
+	color: #FF6600;
+	margin: 0 5px;
+	font-style: normal;
+}
+
+.forgot .forgot_cont .text, .register_cont .text
+{
+	border: 1px solid #CCCCCC;
+	height: 18px;
+	line-height: 18px;
+	margin-right: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 3px;
+	vertical-align: middle;
+	width: 160px;
+}
+
+.register_deal1
+{
+	padding: 10px;
+	background: #fff;
+	margin-left: 30px;
+	border: 1px solid #CCCCCC;
+	background: #F8F8F8;
+}
+
+
+
+
+.register_deal
+{
+	padding: 10px;
+	background: #fff;
+}
+
+
+.register_deal .hd
+{
+	height: 30px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+/*forgot*/
+
+.forgot
+{
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 907px;
+}
+
+.forgot .hd
+{
+	background: url(/images/forgot_tit.jpg) no-repeat;
+	height: 153px;
+}
+.forgot .hd table
+{
+	width: 48%;
+	margin-top: 55px;
+	margin-left: 315px;
+}
+
+.forgot .bd
+{
+	background: url(/images/forgot_center.jpg) repeat-y;
+}
+.forgot .ft
+{
+	background: url(/images/forgot_bottom.jpg) no-repeat;
+	height: 35px;
+}
+
+.forgot .forgot_cont
+{
+	width: 70%;
+	margin: 0px auto;
+}
+
+
+.forgot .forgot_cont2
+{
+	width: 85%;
+	margin: 0px auto;
+}
+
+.forgot .forgot_cont2 table
+{
+	float: left;
+	margin-left: 5px;
+	margin-right: 8px;
+	width: 230px;
+}
+
+.forgot .forgot_cont2 table h2
+{
+	color: #1E50A2;
+	font-weight: bold;
+}
+
+
+.forgot .forgot_cont3
+{
+	margin: 0 auto;
+}
+
+.forgot .forgot_cont3 table
+{
+	margin: 0 auto;
+}
+
+
+/* input */
+
+
+.content .mhd, .content .mft, .cont-tab td.td3 .info b, .info-pop-t, .info-pop-t b, div.info-pop-b b, div.info-pop-b, .info-pop .arr, .btn-jc, .btn-submit, .btn-submit-act, .Aenter
+{
+	background-image: url(/images/bg.jpg);
+	background-repeat: no-repeat;
+}
+.content .mcont
+{
+}
+.main-cont-tit
+{
+}
+
+
+
+
+
+.main-cont
+{
+	width: 804px;
+	margin: 0px auto;
+	padding: 10px 0px;
+}
+/*内容主体*/
+
+.cont-tab
+{
+	width: 804px;
+}
+.cont-tab td
+{
+	padding: 6px 2px;
+	vertical-align: top;
+	line-height: 30px;
+}
+.cont-tab td.tit
+{
+	padding-left: 42px;
+	font-size: 12px;
+	line-height: 26px;
+}
+.cont-tab td.td1
+{
+	font-size: 14px;
+	width: 160px;
+	text-align: right;
+}
+.cont-tab td.td2
+{
+	width: 220px;
+}
+.cont-tab td.td2 .inp
+{
+	width: 210px;
+	padding: 2px;
+	height: 20px;
+	border: 1px solid #ccc;
+	vertical-align: middle;
+	line-height: 16px;
+	font-size: 14px;
+	padding-top: 4px;
+}
+.cont-tab td.td2 .sel
+{
+	width: 100%;
+	font-size: 14px;
+}
+input.ipt-normal
+{
+	border-color: #A0B4C5;
+	background-color: #FFF;
+}
+input.ipt-focus
+{
+	border-color: #727272;
+	background-color: #FFFBD5;
+}
+input.ipt-error
+{
+	border-color: #D5060D;
+	background-color: #FEF5F5;
+}
+.cont-tab td.td3
+{
+	width: auto;
+	padding-left: 10px;
+}
+.cont-tab td.td3 .info
+{
+	position: relative;
+	height: 20px;
+}
+b.ico-ok, b.ico-error
+{
+	display: block;
+	width: 18px;
+	height: 18px;
+	font-size: 0px;
+	overflow: hidden;
+	position: absolute;
+	left: 0px;
+	top: 3px;
+}
+b.ico-ok
+{
+	background-position: -5px -146px;
+}
+b.ico-error
+{
+	background-position: -30px -146px;
+}
+
+.info-pop
+{
+	width: 307px;
+	height: auto;
+	background-color: #EDEDEB;
+	position: absolute;
+	left: 32px;
+	top: -4px;
+}
+.info-pop-t
+{
+	width: 100%;
+	height: 3px;
+	line-height: 0px;
+	font-size: 0px;
+	overflow: hidden;
+	background-position: -78px -146px;
+}
+div.info-pop-t b
+{
+	display: block;
+	width: 5px;
+	height: 3px;
+	font-size: 0px;
+	overflow: hidden;
+}
+.info-pop-t b.cr-l
+{
+	float: left;
+	background-position: -75px -146px;
+}
+.info-pop-t b.cr-r
+{
+	float: right;
+	background-position: -440px -146px;
+}
+.info-pop-c .cont
+{
+	clear: both;
+	margin-right: 2px;
+	border: #BEBCB5 1px solid;
+	padding: 2px 10px;
+	background-color: #FFFEF6;
+	border-width: 0px 1px;
+	color: #4A4A4A;
+	line-height: 24px;
+	font-family: simsun;
+}
+.info-pop-t
+{
+	width: 100%;
+	height: 3px;
+	line-height: 0px;
+	font-size: 0px;
+	overflow: hidden;
+	background-position: -80px -146px;
+}
+.info-pop-b
+{
+	width: 100%;
+	height: 5px;
+	line-height: 0px;
+	font-size: 0px;
+	overflow: hidden;
+	background-position: -78px -154px;
+}
+div.info-pop-b b
+{
+	display: block;
+	width: 5px;
+	height: 5px;
+	font-size: 0px;
+	overflow: hidden;
+}
+.info-pop-b b.cr-l
+{
+	float: left;
+	background-position: -75px -154px;
+}
+.info-pop-b b.cr-r
+{
+	float: right;
+	background-position: -440px -154px;
+}
+.info-pop .arr
+{
+	width: 9px;
+	height: 13px;
+	overflow: hidden;
+	position: absolute;
+	left: -8px;
+	top: 10px;
+	background-position: -65px -146px;
+}
+
+div.I-error .info-pop-t
+{
+	background-position: -78px -167px;
+}
+div.I-error .info-pop-t b.cr-l
+{
+	background-position: -75px -167px;
+}
+div.I-error .info-pop-t b.cr-r
+{
+	background-position: -440px -167px;
+}
+div.I-error .info-pop-c .cont
+{
+	border-color: #EAABAD;
+	background-color: #fff;
+	color: #333;
+}
+div.I-error .info-pop-b
+{
+	background-position: -78px -175px;
+}
+div.I-error .info-pop-b b.cr-l
+{
+	background-position: -75px -175px;
+}
+div.I-error .info-pop-b b.cr-r
+{
+	background-position: -440px -175px;
+}
+div.I-error .arr
+{
+	background-position: -65px -167px;
+}
+.btn-submit
+{
+	width: 114px;
+	height: 37px;
+	background-position: -5px -57px;
+	border: 0px;
+	cursor: pointer;
+	margin-top: 15px;
+}
+.btn-submit-act
+{
+	border: 0px;
+	width: 114px;
+	height: 37px;
+	background-position: -135px -57px;
+	cursor: pointer;
+	margin-top: 15px;
+}
+
+

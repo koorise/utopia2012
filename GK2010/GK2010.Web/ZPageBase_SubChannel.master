@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/ZPageBase.Master" AutoEventWireup="true"
+    CodeBehind="ZPageBase_SubChannel.master.cs" Inherits="GK2010.Web.ZPageBase_SubChannel" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="/css/ytabs-side-menus.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/product.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
+    <!-- top start -->
+    <gk:Top_Channel ID="Top_Channel1" runat="server" />
+    <!-- top end-->    
+    <div class="main">
+        <!--left start -->
+        <div class="left mar5 ">
+            <!--product left start-->
+            <gk:ProductLeft ID="ProductLeft1" runat="server" />
+            <!--product left end-->
+            <div class="brand_section">
+                <h2>
+                    <span><a href="">更多>></a></span>品牌专区</h2>
+                <ul>
+                    <li><a href="">
+                        <img src="/images/pc01.jpg" /></a></li>
+                    <li><a href="">
+                        <img src="/images/pc01.jpg" /></a></li>
+                    <li><a href="">
+                        <img src="/images/pc01.jpg" /></a></li>
+                    <li><a href="">
+                        <img src="/images/pc01.jpg" /></a></li>
+                    <li><a href="">
+                        <img src="/images/pc01.jpg" /></a></li>
+                    <li><a href="">
+                        <img src="/images/pc01.jpg" /></a></li>
+                    <li><a href="">
+                        <img src="/images/pc01.jpg" /></a></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="plan_center mar5">
+                <h2>
+                    <span><a href="">更多>></a></span>方案中心</h2>
+                <ul>
+                    <li><a href="">什么是超声的频率、声速和波长</a></li>
+                    <li><a href="">防爆基本知识理化仪器对比</a></li>
+                    <li><a href="">干燥箱与真空干燥与真空干燥与真空干燥箱的区别干燥</a></li>
+                    <li><a href="">湿度传感器选择的注意</a></li>
+                    <li><a href="">事项检测数据处理基础知</a></li>
+                    <li><a href="">识涡轮流量计注意事项涡</a></li>
+                </ul>
+            </div>
+            <div class="technology_support">
+                <h2>
+                    <span><a href="">更多>></a></span>技术支持</h2>
+                <ul>
+                    <li><a href="">什么是超声的频率、声速和波长</a></li>
+                    <li><a href="">防爆基本知识理化仪器对比</a></li>
+                    <li><a href="">干燥箱与真空干燥与真空干燥与真空干燥箱的区别干燥</a></li>
+                    <li><a href="">湿度传感器选择的注意</a></li>
+                    <li><a href="">事项检测数据处理基础知</a></li>
+                    <li><a href="">识涡轮流量计注意事项涡</a></li>
+                    <li><a href="">事项检测数据处理基础知</a></li>
+                    <li><a href="">识涡轮流量计注意事项涡</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--left end -->
+        <!-- right start -->
+        <div class="right_cont">
+            <asp:ContentPlaceHolder ID="Main" runat="server" />           
+        </div>
+        <!-- right end -->
+    </div>
+    <!-- help start -->
+    <gk:BootHelp ID="BootHelp1" runat="server" />
+    <!-- help end -->
+    <!-- friendlink start -->
+    <gk:BootFriendLink ID="BootFriendLink1" runat="server" />
+    <!-- friendlink end -->
+    <!-- foot start -->
+    <gk:Boot ID="Boot1" runat="server" />
+    <!-- foot end -->
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="BootOther" runat="server">
+    <asp:ContentPlaceHolder ID="BootOther" runat="server" />
+</asp:Content>

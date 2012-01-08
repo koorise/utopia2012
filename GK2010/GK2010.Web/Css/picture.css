@@ -1,0 +1,150 @@
+     code, kbd, pre, samp
+        {
+            font-family: courier new,courier,monospace;
+        }
+        small
+        {
+            font-size: 12px;
+        }
+        ul, ol
+        {
+            list-style: none;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+        a:hover
+        {
+            text-decoration: underline;
+        }
+        sup
+        {
+            vertical-align: text-top;
+        }
+        sub
+        {
+            vertical-align: text-bottom;
+        }
+        legend
+        {
+            color: #000;
+        }
+        fieldset, img
+        {
+            border: 0;
+        }
+        button, input, select, textarea
+        {
+            font-size: 100%;
+        }
+        table
+        {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        #page, #header, #content, #footer
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .col-sub, .col-extra
+        {
+            float: left;
+        }
+        .layout:after, .main-wrap:after, .col-sub:after, .col-extra:after
+        {
+            content: '\20';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        .layout, .main-wrap, .col-sub, .col-extra
+        { *zoom:1;}
+        
+        .photo
+        {
+            position: relative;
+            width: 159px;
+            height: 159px;
+            margin: 0 auto 5px;
+            padding: 5px;
+            border: solid 1px #ddd;
+        }
+        .photo a
+        {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            width: 159px;
+            height: 159px;
+            outline: none; *display:block;*line-height:0;}
+        .photo a img
+        {
+            vertical-align: middle;
+        }
+        .photo img
+        {
+            vertical-align: middle;
+        }
+        .normal
+        {
+            list-style: none;
+            float: left;
+            width: 92px;
+            height: 30px;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+        .normal a, .selected a
+        {
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 30px;
+        }
+        .selected a
+        {
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 30px;
+            color: #6C6C6C;
+        }
+        .selected
+        {
+            list-style: none;
+            float: left;
+            font-weight: normal;
+            width: 92px;
+            margin-left: 6px;
+            height: 30px;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            background: url(../../images/shop/tuji_tit.jpg) no-repeat;
+        }
+        #divMainTab
+        {
+            background: url(../../images/shop/right_tit.jpg) no-repeat;
+            height: 30px;
+            padding-left: 24px;
+            float: left;
+            width: 695px;
+        }
+        #divMainTab .font_gay
+        {
+            font-weight: bold;
+            line-height: 30px;
+        }
+        #divMainTab ul
+        {
+            float: right;
+            font-weight: normal;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        .divContent
+        {
+            width: 720px;
+            clear: both;
+        }

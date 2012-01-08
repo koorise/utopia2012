@@ -1,0 +1,487 @@
+@import url("/css/share.css");
+@import url("/css/index.css");
+body
+{
+	font-size: 12px;
+	line-height: 22px;
+}
+
+.mar5
+{
+	_margin-top: 5px;
+}
+.help
+{
+}
+
+.help .left
+{
+	width: 231px;
+}
+
+.help .left .left_first
+{
+	width: 231px;
+	float: left;
+}
+
+.help .left .left_first .hd
+{
+	width: 230px;
+	float: left;
+	background: url(/images/h2_tigtt02.jpg) no-repeat;
+}
+
+.help .left .left_first .hd h2
+{
+	padding-left: 25px;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.help .left .left_first .bd
+{
+	float: left;
+	width: 230px;
+	background: url(/images/bg_yv.jpg) repeat-y;
+}
+
+
+.help .left .left_first .bd .ul1
+{
+	width: 230px;
+	margin-top: 8px;
+}
+
+.help .left .left_first .bd .ul1 li
+{
+	float: left;
+	background: url(/images/buttonb02.jpg) no-repeat;
+	width: 106px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	margin: 3px 3px;
+}
+
+
+
+
+.help .left .left_first .ft
+{
+	float: left;
+	background: url(/images/hd_titc.jpg) no-repeat;
+	height: 20px;
+	clear: both;
+	width: 230px;
+}
+
+
+.help .left .left_first .bd div.cat
+{
+	width: 230px;
+	margin-top: 2px;
+	margin-left: 1px;
+}
+
+
+
+
+
+
+.help .left .left_first .bd div.open a.cat-hx
+{
+	background-color: transparent;
+	background: url(/images/dian_02.jpg) no-repeat left center;
+	font-weight: bold;
+	color: #555555;
+	display: block;
+	height: 31px;
+	line-height: 31px;
+	margin-bottom: -30px;
+	margin-left: 5px;
+	padding-left: 10px;
+	position: relative;
+	text-indent: -9999px;
+	width: 5px;
+	z-index: 2;
+}
+
+.help .left .left_first .bd div.close a.cat-hx
+{
+	background-color: transparent;
+	background: url(/images/dian_03.jpg) no-repeat left center;
+	font-weight: bold;
+	color: #555555;
+	display: block;
+	height: 31px;
+	line-height: 31px;
+	margin-bottom: -30px;
+	margin-left: 5px;
+	padding-left: 10px;
+	position: relative;
+	text-indent: -9999px;
+	width: 5px;
+	z-index: 2;
+}
+
+
+
+.help .left .left_first .bd div.cat h2
+{
+	background: url(/images/bg_tit.jpg) no-repeat;
+	width: 200px;
+	line-height: 27px;
+	padding-left: 25px;
+}
+
+
+.help .left .left_first .bd div.cat div.cat-content
+{
+	height: auto;
+}
+
+.help .left .left_first .bd .cat-content ul
+{
+	margin-left: 10px;
+}
+
+.help .left .left_first .bd .cat-content ul li
+{
+	background: none;
+	width: auto;
+	padding-left: 0px;
+	background: url(/images/dian_01.jpg) no-repeat left center;
+	height: 20px;
+	margin-bottom: 3px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	text-indent: 1em;
+	white-space: nowrap;
+}
+
+
+.help .left .left_first .bd .ul2 li ul li
+{
+	background: none;
+	width: auto;
+	padding-left: 0px;
+	background: url(/images/dian_01.jpg) no-repeat left center;
+}
+
+.help .right
+{
+	width: 716px;
+	float: right;
+}
+
+.help .right .right_first
+{
+	width: 716px;
+}
+
+.help .right .right_first .hd
+{
+	background: url(/images/right_tit.jpg) no-repeat;
+	height: 39px;
+}
+.help .right .right_first .bd
+{
+	border-left: 1px solid #D4D4D4;
+	border-right: 1px solid #D4D4D4;
+}
+
+.help .right .right_first .ft
+{
+	background: url(/images/right_bottom.jpg) no-repeat;
+	height: 19px;
+}
+
+
+.help .right .right_second
+{
+	width: 716px;
+	margin-top: 8px;
+}
+
+
+.help .right .right_second .right_second_left
+{
+	width: 349px;
+	border: 1px solid #D4D4D4;
+	float: left;
+	position: relative;
+}
+
+.help .right .right_second .right_second_right .hd, .help .right .right_second .right_second_left .hd
+{
+	float: left;
+	position: relative;
+	width: 349px;
+	background: url(/images/h2_tit02.jpg) no-repeat bottom;
+}
+
+.help .right .right_second .right_second_right .hd h2, .help .right .right_second .right_second_left .hd h2
+{
+	font-weight: bold;
+	font-size: 12px;
+}
+
+
+.help .right .right_second .right_second_right .hd h2 span, .help .right .right_second .right_second_left .hd h2 span
+{
+	float: right;
+	margin-right: 5px;
+	font-weight: normal;
+}
+
+
+.help .right .right_second .right_second_right .hd .bg_tit, .help .right .right_second .right_second_left .hd .bg_tit
+{
+	background: url(/images/top_2.jpg) no-repeat left top;
+	position: absolute;
+	width: 20px;
+	top: -1px;
+	left: -1px;
+	z-index: 100;
+	height: 5px;
+}
+
+.help .right .right_second .right_second_right .hd .bg_tit2, .help .right .right_second .right_second_left .hd .bg_tit2
+{
+	background: url(/images/top_3.jpg) no-repeat right top;
+	position: absolute;
+	width: 20px;
+	top: -1px;
+	right: -1px;
+	_right: -2px;
+	z-index: 100;
+	height: 5px;
+}
+
+
+
+.help .right .right_second .right_second_right .ft, .help .right .right_second .right_second_left .ft
+{
+	float: left;
+	background: url(/images/bg_bottom.jpg) repeat-x bottom;
+	position: relative;
+	height: 19px;
+	width: 100%;
+}
+
+
+
+
+
+.help .right .right_second .right_second_right .ft .bg_tit3, .help .right .right_second .right_second_left .ft .bg_tit3
+{
+	background: url(/images/bg_bottom01.jpg) no-repeat left bottom;
+	position: absolute;
+	width: 20px;
+	top: -1px;
+	left: -1px;
+	z-index: 100;
+	height: 21px;
+}
+.help .right .right_second .right_second_right .ft .bg_tit4, .help .right .right_second .right_second_left .ft .bg_tit4
+{
+	background: url(/images/bg_bottom02.jpg) no-repeat right bottom;
+	position: absolute;
+	width: 20px;
+	top: -1px;
+	right: -1px;
+	_right: -2px;
+	z-index: 100;
+	height: 21px;
+}
+
+
+
+
+
+
+.help .right .right_second .right_second_right .hd h2, .help .right .right_second .right_second_left .hd h2
+{
+	padding-left: 19px;
+	height: 25px;
+	padding-top: 10px;
+}
+
+
+
+.help .right .right_second .right_second_right
+{
+	width: 349px;
+	float: right;
+	position: relative;
+}
+
+.help .right .right_second .right_second_right .question
+{
+	border: 1px solid #D4D4D4;
+	width: 349px;
+	float: left;
+	line-height: 23px;
+}
+
+
+.help .right .right_second .right_second_right .question li
+{
+}
+
+
+
+
+
+
+.main-quick-guid-links
+{
+	margin-left: 15px;
+	float: left;
+}
+
+
+
+.main-quick-guid-links li
+{
+	background-image: url(/images/dian_red.jpg);
+	background-position: left 5px;
+	background-repeat: no-repeat;
+	color: #C63200;
+	float: left;
+	line-height: 25px;
+	font-weight: bold;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-top: 12px;
+	padding-left: 15px;
+	text-align: left;
+}
+.main-quick-guid-links li ul
+{
+	width: 280px;
+}
+
+.main-quick-guid-links li ul li
+{
+	background-image: url(/images/line02.jpg);
+	background-position: right center;
+	background-repeat: no-repeat;
+	float: left;
+	font-size: 12px;
+	font-weight: normal;
+	height: 18px;
+	line-height: 18px;
+	list-style-type: none;
+	margin-bottom: 5px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 5px;
+	padding-bottom: 0;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 0;
+	white-space: nowrap;
+	width: auto;
+}
+
+.message_position
+{
+	background: url(/images/message_bg02.jpg) no-repeat;
+	height: 53px;
+	line-height: 35px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.list-help-links
+{
+	margin-left: 10px;
+}
+.list-help-links li
+{
+	height: 28px;
+	line-height: 28px;
+	border-bottom: 1px dashed #eee;
+	padding: 0 10px;
+	background: url(/images/dian_01.jpg) no-repeat left center;
+}
+
+.help-detailed
+{
+	padding-left:10px;
+	width: 98%;
+}
+
+.help-detailed h2
+{
+	text-align: center;
+	font-size: 14px;
+	margin: 10px auto;
+	font-weight: bold;
+}
+
+.help-detailed p
+{
+	margin:5px 0px;
+}
+
+.Tools
+{
+	height: 18px;
+	line-height: 18px;
+	text-align: right;
+}
+
+.help-feedback
+{
+	background-color: #FBF9F4;
+	border-bottom-color: #EAEAEA;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+}
+
+.help-feedback .title
+{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.feedback-yes .option
+{
+	background: url(/images/ok_01.jpg) no-repeat left center;
+	padding: 0 15px;
+}
+
+.feedback-no .option
+{
+	background: url(/images/fou01.jpg) no-repeat left center;
+	padding: 0 15px;
+}
+
+.search-title
+{
+	-moz-background-clip: border;
+	-moz-background-origin: padding;
+	-moz-background-size: auto auto;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(/images/bgg_tit02.jpg);
+	background-repeat: repeat-x;
+	color: #000000;
+	font-family: "Microsoft YaHei" ,SimHei;
+	font-size: 14px;
+	font-weight: bold;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+}

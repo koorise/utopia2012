@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Insert Picture Property</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<meta content="noindex, nofollow" name="robots">
+		<script src="../common/fck_dialog_common.js" type="text/javascript"></script>
+		<script src="/javascript/upload.js"></script>
+		<script>			
+			var oEditor = window.parent.InnerDialogLoaded() ;
+			window.onload = function()
+			{	
+				oEditor.FCKLanguageManager.TranslatePage(document) ;
+				window.parent.SetOkButton( true ) ;
+			}
+
+			function Ok()
+			{
+				if(document.getElementById("PictureNormal").value == "")
+				{
+					window.parent.Cancel() ;
+				}
+				else
+				{
+					oEditor.FCK.InsertHtml("<img border=0 src='"+document.getElementById("PictureNormal").value+"'>") ;
+					window.parent.Cancel() ;
+				}
+				
+			}
+		</script>
+	</head>
+	<body style="OVERFLOW: hidden">
+		<form id="Form1" name="Form1">
+			<table width="100%" style="HEIGHT: 100%">
+				<tr>
+					<td align="center">
+						<table cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td>
+									<TABLE width="300" >
+										<TR>
+											<TD height="20"><INPUT id="btnUpload" onclick="upload(this)" type="button" value="上传" name="btnUpload"></TD>
+											<TD><DIV id="msg"></DIV>
+												<INPUT id="PictureSmall" type="hidden" name="PictureSmall" size="12"><INPUT id="PictureBig" type="hidden" name="PictureBig" size="8"><INPUT id="PictureNormal" type="hidden" name="PictureNormal" size="4">
+											</TD>
+										</TR>
+										<TR>
+											<TD width="84" colSpan="2" height="64"><IMG id="imgQZ"><IFRAME id="hidden_frame" style="DISPLAY: none" name="hidden_frame" src="/upload.aspx?type=Article"
+													width="0" height="0"></IFRAME>
+											</TD>
+										</TR>
+									</TABLE>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

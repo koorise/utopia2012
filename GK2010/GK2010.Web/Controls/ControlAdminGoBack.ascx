@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ControlAdminGoBack.ascx.cs" Inherits="GK2010.Web.Controls.ControlAdminGoBack" %>
+<input type="button" class="btn_gray_big" value="返回" onclick="history.go(-1)" />
