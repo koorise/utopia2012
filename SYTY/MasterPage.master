@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+<link rel="stylesheet" type="text/css" href="css/all.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/plugin.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+    <asp:ContentPlaceHolder id="cphead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+<!--head==========begin-->
+	<div id="head" class="clearfix layout">
+		
+		<h1 class="logo"><a href="#" title=""><img alt="" title="" src="images/img_logo.png" /></a></h1>
+
+        <ul class="top_nav clearfix">
+            <li class="sina"><a href="#" title="">新浪微博</a></li>
+            <li class="collect"><a href="#" title="">收藏本页</a></li>
+        </ul>
+		
+	</div>
+	<!--head==========end-->
+
+	<!--container==========begin-->
+	<div id="container" >
+		<div class="content layout clearfix">
+		
+            <ul id="Js_nav" class="nav_list">
+            <li class="nav_item"><a href="/Default.aspx">网站首页</a>
+                </li>
+                <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+            </ul>
+         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+		</div>
+		 
+	</div>
+	
+	<!--container==========end-->
+    <br/>
+    <br/>
+	<!--foot==========begin-->
+    <div class="clearfix footer_top layout" >
+    
+</div>
+	<div id="footer" class="clearfix">
+    	<div class="layout clearfix">
+        	<div class="copyright">田园景观 版权所有 &copy;2004-2011 <a href="#">www.cty.com.cn</a>.All rights reserved</div>
+            <div class="footer_contact">
+            	<span>Tel:(86)024-23942330</span>
+            	<span>Fax:(86)024-23938159</span>
+            	<span>Mail:<a href="#">webmaster@cty.com.cn</a><script language="javascript" type="text/javascript" src="http://js.users.51.la/3623856.js"></script>
+<noscript><a href="http://www.51.la/?3623856" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/3623856.asp" style="border:none" /></a></noscript></span>
+            </div>
+        </div>
+    
+	</div>
+	<!--foot==========end-->
+
+    </form>
+</body>
+</html>
