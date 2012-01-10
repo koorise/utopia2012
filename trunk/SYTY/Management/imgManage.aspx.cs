@@ -12,9 +12,10 @@ public partial class Management_imgManage : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Response.Cache.SetNoStore();
+        
         if(!IsPostBack)
         {
+            
             string connStr =
            @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Server.MapPath("~/App_Data/Database.mdb") +
            ";Persist Security Info=False;";

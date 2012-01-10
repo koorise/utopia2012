@@ -81,7 +81,7 @@
 			<div id="profile-links">
 				Hello, admin!<br />
 				<br />
-				<a href="/Default.aspx" title="View the Site">前台</a> | 
+				<a href="/Default.aspx" target="_blank" title="View the Site">前台</a> | 
                 <a href="/management/logout.aspx" title="View the Site">退出</a> 
 			</div>        
 			
