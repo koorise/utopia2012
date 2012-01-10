@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="imgList.aspx.cs" Inherits="imgList" %>
+﻿<%@ Page Title="田园展示" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="imgList.aspx.cs" Inherits="imgList" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphead" Runat="Server">
 </asp:Content>

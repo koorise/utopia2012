@@ -10,6 +10,7 @@ public partial class Management_imgdel : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Response.Cache.SetCacheability(System.Web.HttpCacheability.NoCache);
         if (Request["ID"] != null)
         {
             string id = Request["ID"];

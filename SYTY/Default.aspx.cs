@@ -20,7 +20,7 @@ public partial class _Default : System.Web.UI.Page
             OleDbConnection conn = new OleDbConnection(connStr);
             OleDbCommand cmd = new OleDbCommand();
             cmd.CommandText =
-                "select top 16 * from ty_img where iscover=0";
+                "select top 16 * from ty_img where iscover=0 order by id desc";
             cmd.Connection = conn;
             conn.Open();
             OleDbDataReader dr = cmd.ExecuteReader();
