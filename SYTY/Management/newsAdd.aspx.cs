@@ -10,7 +10,7 @@ public partial class Management_newsAdd : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Response.Cache.SetNoStore();
+        
         if(!IsPostBack)
         {
             string connStr =
@@ -42,7 +42,8 @@ public partial class Management_newsAdd : System.Web.UI.Page
         cmd.Connection = conn;
         conn.Open();
         cmd.ExecuteNonQuery();
-        Response.Redirect("~/management/default.aspx");
+        
+        Response.Redirect("~/management/default.aspx?r="+Guid.NewGuid());
 
     }
     public static void MakeThumbnail(string originalImagePath, string thumbnailPath, int width, int height, string mode)

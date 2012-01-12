@@ -157,7 +157,7 @@
 					<small><a href="#" class="remove-link" title="Remove message">Remove</a></small>
 				</p>
 				
-				<form action="#" method="post">
+				< 
 					
 					<h4>New Message</h4>
 					
@@ -178,7 +178,7 @@
 						
 					</fieldset>
 					
-				</form>
+				 
 				
 			</div> <!-- End #messages -->
 			

@@ -25,7 +25,7 @@
                 <div class="index_news index_aboutus clearfix">
                 	<div class="hd clearfix"><h3>关于田园</h3><span>COMPANY</span></div>
                     <div class="pic"><a href="#"><img alt="" src="images/img_aboutus.jpg" /></a></div>
-                    <div class="intro">田园景观设计公司主要从事风景区、居住区、别墅区、城市广场、主题公园、大型绿地等各种类型项目的景观规划设计工作。我们立志以开放的思维，将国、内外先进的设计历年与设计手法引入项目的创造之中，结合地域文化特色和生态环境特点，以求真求实的职业精神，奉献给社会以景观设计精品。田园景观——让您品位艺术生活…<a href="#">[查看详情]</a></div>
+                    <div class="intro">田园景观设计公司主要从事风景区、居住区、别墅区、城市广场、主题公园、大型绿地等各种类型项目的景观规划设计工作。我们立志以开放的思维，将国、内外先进的设计历年与设计手法引入项目的创造之中，结合地域文化特色和生态环境特点，以求真求实的职业精神，奉献给社会以景观设计精品。田园景观——让您品位艺术生活…<a href="aboutus.aspx">[查看详情]</a></div>
                 </div>
                 
                 

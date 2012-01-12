@@ -9,7 +9,7 @@ public partial class Management_MasterPage : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        Response.Cache.SetCacheability(System.Web.HttpCacheability.NoCache);
+        this.Response.Cache.SetNoStore(); 
         if(!GetCookies())
         {
          Response.Redirect("~/management/login.aspx");   

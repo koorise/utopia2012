@@ -46,8 +46,8 @@
               </td>
     </tr>
     <tr> 
-        <td colspan="2" style="text-align: center; background-color:White;">
-            <asp:Button ID="Button1" runat="server" Text="添加" onclick="Button1_Click" /></td>
+        <td colspan="2" style="text-align: center; background-color:White;"> 
+            <asp:Button ID="Button1" runat="server" Text="添加" CssClass="button" onclick="Button1_Click" /></td>
     </tr>
 </table>
 						
