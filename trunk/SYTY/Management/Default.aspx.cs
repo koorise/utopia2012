@@ -11,60 +11,66 @@ public partial class Management_Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        string connStr =
-    @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Server.MapPath("~/App_Data/Database.mdb") +
-    ";Persist Security Info=False;";
-        OleDbConnection conn = new OleDbConnection(connStr);
-        OleDbCommand cmd = new OleDbCommand();
-
-        cmd.CommandText = "select * from ty_article order by id desc";
-        cmd.Connection = conn;
-        conn.Open();
-        OleDbDataReader dr = cmd.ExecuteReader();
-        List<ArticleModule> articleModules = new List<ArticleModule>();
-        int i = 1;
-        while (dr.Read())
+        if (!IsPostBack)
         {
-            ArticleModule am = new ArticleModule();
-            am.id = i;
-            am.aid = int.Parse(dr["id"].ToString());
-            am.title = dr["title"].ToString();
-            am.content = dr["content"].ToString();
-            am.typeid = int.Parse(dr["typeid"].ToString());
-            am.typename = dr["typename"].ToString();
-            am.listStyle = "<li><span><a href='/newsList.aspx?id=" + dr["id"] + "' >" + dr["title"] + "</a></span><label>" + dr["intime"] +
-                           "</label></li>";
-            articleModules.Add(am);
-            i++;
-        }
-          
+            string connStr =
+                @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Server.MapPath("~/App_Data/Database.mdb") +
+                ";Persist Security Info=False;";
+            OleDbConnection conn = new OleDbConnection(connStr);
+            OleDbCommand cmd = new OleDbCommand();
+
+            cmd.CommandText = "select * from ty_article order by id desc";
+            cmd.Connection = conn;
+            conn.Open();
+            OleDbDataReader dr = cmd.ExecuteReader();
+            List<ArticleModule> articleModules = new List<ArticleModule>();
+            int i = 1;
+            while (dr.Read())
+            {
+                ArticleModule am = new ArticleModule();
+                am.id = i;
+                am.aid = int.Parse(dr["id"].ToString());
+                am.title = dr["title"].ToString();
+                am.content = dr["content"].ToString();
+                am.typeid = int.Parse(dr["typeid"].ToString());
+                am.typename = dr["typename"].ToString();
+                am.listStyle = "<li><span><a href='/newsList.aspx?id=" + dr["id"] + "' >" + dr["title"] +
+                               "</a></span><label>" + dr["intime"] +
+                               "</label></li>";
+                articleModules.Add(am);
+                i++;
+            }
+
             int pagesize = 10;
-            int pagecount = ((int)(articleModules.Count / 10)) + ((articleModules.Count % 10 == 0 ? 0 : 1));
+            int pagecount = ((int) (articleModules.Count/10)) + ((articleModules.Count%10 == 0 ? 0 : 1));
             int currentPage = 1;
             if (Request["page"] != null)
             {
                 currentPage = int.Parse(Request["page"]);
             }
 
-            var displayList = articleModules.Skip((currentPage - 1) * pagesize).Take(pagesize);
-            StringBuilder sb=new StringBuilder();
+            var displayList = articleModules.Skip((currentPage - 1)*pagesize).Take(pagesize);
+            StringBuilder sb = new StringBuilder();
             foreach (ArticleModule articleModule in displayList)
             {
                 sb.Append("<tr> ");
-                sb.Append("<td>"+articleModule.aid+"</td>");
-                sb.Append("<td><a href='/newslist.aspx?id=" + articleModule.aid + "' title='title'>" + articleModule.title + "</a></td>");
-               // sb.Append("<td>Consectetur adipiscing</td>");
+                sb.Append("<td>" + articleModule.aid + "</td>");
+                sb.Append("<td><a href='/newslist.aspx?id=" + articleModule.aid + "' title='title'>" +
+                          articleModule.title + "</a></td>");
+                // sb.Append("<td>Consectetur adipiscing</td>");
                 sb.Append("<td>");
-                sb.Append(" <a href='/management/newsAdd.aspx?id=" + articleModule.aid + "' title='Edit'><img src='resources/images/icons/pencil.png' alt='Edit' /></a>");
-                sb.Append("<a href='/management/newsdel.aspx?id=" + articleModule.aid + "' title='Delete'><img src='resources/images/icons/cross.png' alt='Delete' /></a> ");
+                sb.Append(" <a href='/management/newsAdd.aspx?id=" + articleModule.aid +
+                          "' title='Edit'><img src='resources/images/icons/pencil.png' alt='Edit' /></a>");
+                sb.Append("<a href='/management/newsdel.aspx?id=" + articleModule.aid +
+                          "' title='Delete'><img src='resources/images/icons/cross.png' alt='Delete' /></a> ");
                 sb.Append("</td>");
-                sb.Append("</tr>"); 
+                sb.Append("</tr>");
             }
-        Literal1.Text = sb.ToString();
+            Literal1.Text = sb.ToString();
             Literal2.Text += PagerHTML(currentPage, pagecount, "/management/default.aspx");
-        
-        
 
+
+        }
     }
     public static string PagerHTML(int pageIndex, int pageCount, string url)
     {
