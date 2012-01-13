@@ -4,12 +4,17 @@
     <title><%=SeoTitle %></title>
     <meta name="keywords" content="<%=SeoKeywords %>" />
     <meta name="description" content="<%=SeoDescription %>" />
+    <script src="/JavaScript/swfobject.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        swfobject.embedSWF("/Images/adv_23.swf", "ad_tech_index", 960, 100, "9.0.0");
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">  
     <gk:Navigator ID="Navigator1" runat="server" />  
     <div class="news_index">
-        <!--TechIndex_960_100_1 AD1-->
-        <gk:AD ID="AD1" runat="server" Width="960" Height="100" Category="TechIndex_960_100_1" />       
+        <div style="height:100px;margin-bottom:10px;width:960px;">
+            <div id="ad_tech_index"></div>
+        </div>
     </div>
     <div class="news_index">
         <div class="left">

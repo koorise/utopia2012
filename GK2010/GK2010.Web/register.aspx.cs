@@ -57,7 +57,7 @@ namespace GK2010.Web
                     if (UserID > 0)
                     {
                         //发送邮件
-                        bool ok = EmailHelper.SendActive(UserID, txtEmail.Text);
+                        //bool ok = EmailHelper.SendActive(UserID, txtEmail.Text);
 
                         //注册成功
                         Response.Redirect("register_step2.aspx?id=" + UserID + "&Email=" + txtEmail.Text);

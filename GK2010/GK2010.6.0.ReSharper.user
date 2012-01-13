@@ -1,0 +1,278 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/d:Admin/d:Product/f:Manage.aspx" caret="4046" fromTop="43" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/d:Admin/d:ProductParts/f:Manage.aspx.designer.cs" caret="1991" fromTop="25" />
+      <File id="4552A52B-7231-4D3D-AF56-8C16DAC51913/f:ABCHelper.cs" caret="192" fromTop="10" />
+      <File id="3AD35F40-71F4-48B7-8F1A-02020A7899B2/f:ProductCache.cs" caret="150" fromTop="4" />
+      <File id="AA0DC3AB-B7E1-4E63-A0BB-B76EE60F7F9D/f:ProductPartsCache.cs" caret="726" fromTop="25" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/d:Admin/d:ProductParts/f:Manage.aspx.cs" caret="6262" fromTop="24" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/d:Admin/d:ProductParts/f:Manage.aspx" caret="0" fromTop="0" />
+      <File id="AA0DC3AB-B7E1-4E63-A0BB-B76EE60F7F9D/f:ProductCache.cs" caret="1348" fromTop="24" />
+      <File id="4552A52B-7231-4D3D-AF56-8C16DAC51913/f:RequestParam.cs" caret="158" fromTop="0" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/d:Product/f:diy.aspx.cs" caret="768" fromTop="0" />
+      <File id="3AD35F40-71F4-48B7-8F1A-02020A7899B2/f:Product.cs" caret="2072" fromTop="19" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:product_modelselect_handle.aspx.cs" caret="1592" fromTop="8" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart.aspx" caret="616" fromTop="13" />
+      <File id="AA0DC3AB-B7E1-4E63-A0BB-B76EE60F7F9D/f:MemberCart.cs" caret="22708" fromTop="30" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart_step2.aspx" caret="18515" fromTop="29" />
+      <File id="DDF2CB1C-7870-4838-A6FA-3B8A041FE102/f:MemberCart.cs" caret="0" fromTop="0" />
+      <File id="3AD35F40-71F4-48B7-8F1A-02020A7899B2/f:MemberCart.cs" caret="9215" fromTop="12" />
+      <File id="3AD35F40-71F4-48B7-8F1A-02020A7899B2/f:MemberOrder.cs" caret="604" fromTop="7" />
+      <File id="DDF2CB1C-7870-4838-A6FA-3B8A041FE102/f:MemberOrder.cs" caret="3565" fromTop="0" />
+      <File id="AA0DC3AB-B7E1-4E63-A0BB-B76EE60F7F9D/f:MemberOrder.cs" caret="956" fromTop="27" />
+      <File id="4552A52B-7231-4D3D-AF56-8C16DAC51913/f:DatetimeHelper.cs" caret="2600" fromTop="26" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/d:Product/f:detail.aspx.cs" caret="9907" fromTop="25" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart_step2.aspx.cs" caret="6003" fromTop="33" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart.aspx.cs" caret="1501" fromTop="4" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/d:Product/f:diy.aspx" caret="1199" fromTop="0" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/d:Product/f:detail.aspx" caret="1713" fromTop="0" />
+      <File id="DDF2CB1C-7870-4838-A6FA-3B8A041FE102/f:Product.cs" caret="15034" fromTop="22" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:Web.config" caret="6684" fromTop="14" />
+      <File id="AA0DC3AB-B7E1-4E63-A0BB-B76EE60F7F9D/f:Product.cs" caret="5403" fromTop="26" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:Default.aspx.cs" caret="814" fromTop="27" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="3AD35F40-71F4-48B7-8F1A-02020A7899B2/f:MemberOrder.cs" caret="451" fromTop="16" />
+      <File id="3AD35F40-71F4-48B7-8F1A-02020A7899B2/f:MemberOrder.cs" caret="3805" fromTop="41" />
+      <File id="3AD35F40-71F4-48B7-8F1A-02020A7899B2/f:MemberOrder.cs" caret="3766" fromTop="39" />
+      <File id="3AD35F40-71F4-48B7-8F1A-02020A7899B2/f:MemberOrder.cs" caret="9737" fromTop="29" />
+      <File id="3AD35F40-71F4-48B7-8F1A-02020A7899B2/f:MemberOrder.cs" caret="9885" fromTop="35" />
+      <File id="DDF2CB1C-7870-4838-A6FA-3B8A041FE102/f:MemberOrder.cs" caret="13271" fromTop="15" />
+      <File id="DDF2CB1C-7870-4838-A6FA-3B8A041FE102/f:MemberOrder.cs" caret="6333" fromTop="42" />
+      <File id="DDF2CB1C-7870-4838-A6FA-3B8A041FE102/f:MemberOrder.cs" caret="13199" fromTop="30" />
+      <File id="DDF2CB1C-7870-4838-A6FA-3B8A041FE102/f:MemberOrder.cs" caret="3802" fromTop="50" />
+      <File id="3AD35F40-71F4-48B7-8F1A-02020A7899B2/f:MemberOrder.cs" caret="3214" fromTop="50" />
+      <File id="3AD35F40-71F4-48B7-8F1A-02020A7899B2/f:MemberOrder.cs" caret="276" fromTop="0" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart_step2.aspx.cs" caret="7170" fromTop="35" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart_step2.aspx.cs" caret="7507" fromTop="40" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart_step2.aspx.cs" caret="7775" fromTop="45" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart_step2.aspx.cs" caret="7939" fromTop="47" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart_step2.aspx.cs" caret="7939" fromTop="47" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart_step2.aspx.cs" caret="495" fromTop="10" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart_step2.aspx.cs" caret="7955" fromTop="33" />
+      <File id="AA0DC3AB-B7E1-4E63-A0BB-B76EE60F7F9D/f:MemberOrder.cs" caret="37646" fromTop="37" />
+      <File id="DDF2CB1C-7870-4838-A6FA-3B8A041FE102/f:MemberOrder.cs" caret="559" fromTop="11" />
+      <File id="DDF2CB1C-7870-4838-A6FA-3B8A041FE102/f:MemberOrder.cs" caret="3565" fromTop="33" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart_step2.aspx.cs" caret="5083" fromTop="28" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart_step2.aspx.cs" caret="5083" fromTop="29" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart_step2.aspx.cs" caret="5083" fromTop="22" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart_step2.aspx.cs" caret="6480" fromTop="20" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart_step2.aspx.cs" caret="5802" fromTop="22" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:cart_step2.aspx.cs" caret="5335" fromTop="7" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/d:Product/f:detail.aspx" caret="3038" fromTop="13" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:Default.aspx.cs" caret="5331" fromTop="25" />
+      <File id="5A3AADFE-7D4A-48D6-BCFC-841F51656DE9/f:Web.config" caret="6684" fromTop="14" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:GK2010.Model.ProductParts">
+      <Item value="HasChild" priority="53" />
+      <Item value="ID" priority="215" />
+      <Item value="TitleEn" priority="80" />
+      <Item value="Title" priority="161" />
+      <Item value="DefaultFlag" priority="26" />
+      <Item value="ParentID" priority="26" />
+      <Item value="PictureID" priority="26" />
+      <Item value="PictureSmall" priority="26" />
+      <Item value="Path" priority="80" />
+      <Item value="Flag" priority="26" />
+      <Item value="AttachmentFlag" priority="26" />
+      <Item value="ProductID" priority="26" />
+      <Item value="Price" priority="107" />
+    </ItemStatistics>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="_s1" priority="831" />
+      <Item value="p" priority="288" />
+      <Item value="_p" priority="351" />
+      <Item value="if" priority="191" />
+      <Item value="var" priority="63" />
+      <Item value="LoadPageStateFromPersistenceMedium`0" priority="31" />
+      <Item value="from" priority="63" />
+      <Item value="where" priority="63" />
+      <Item value="c" priority="63" />
+      <Item value="select" priority="63" />
+      <Item value="foreach" priority="63" />
+      <Item value="Model" priority="127" />
+      <Item value="ProductParts`0" priority="135" />
+      <Item value="list_pic`0" priority="31" />
+      <Item value="else" priority="31" />
+      <Item value="pp" priority="31" />
+      <Item value="_c" priority="63" />
+      <Item value="Length" priority="26" />
+      <Item value="lblTxtb" priority="31" />
+      <Item value="_s2" priority="31" />
+      <Item value="string" priority="159" />
+      <Item value="abcStr" priority="191" />
+      <Item value="ProductParts" priority="53" />
+      <Item value="Product`0" priority="54" />
+      <Item value="Product" priority="26" />
+      <Item value="RequestParam`0" priority="31" />
+      <Item value="model" priority="63" />
+      <Item value="Response" priority="63" />
+      <Item value="Request" priority="31" />
+      <Item value="decimal" priority="95" />
+      <Item value="_parts" priority="191" />
+      <Item value="ppEN" priority="159" />
+      <Item value="ppCN" priority="63" />
+      <Item value="ppPrice" priority="63" />
+      <Item value="mod_mcart" priority="127" />
+      <Item value="ppID" priority="63" />
+      <Item value="protected" priority="63" />
+      <Item value="MemberOrder`0" priority="108" />
+      <Item value="BLL" priority="95" />
+      <Item value="new" priority="63" />
+      <Item value="MemberOrder" priority="51" />
+      <Item value="mo" priority="735" />
+      <Item value="model_mc" priority="31" />
+      <Item value="mc" priority="863" />
+      <Item value="readonly" priority="31" />
+      <Item value="bll_mod" priority="31" />
+      <Item value="Common" priority="31" />
+      <Item value="LoginHelper`0" priority="26" />
+      <Item value="long" priority="31" />
+      <Item value="orderNum" priority="63" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="StartsWith`0" priority="26" />
+      <Item value="Split`0" priority="26" />
+      <Item value="Substring`0" priority="26" />
+      <Item value="Length" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Label">
+      <Item value="Text" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Literal">
+      <Item value="Text" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="AspCodeCompletionContext">
+      <Item value="script" priority="6" />
+      <Item value="type" priority="6" />
+      <Item value="text/javascript" priority="6" />
+      <Item value="CssClass" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="JavaScriptSpecificContextQualified">
+      <Item value="forEach" priority="8" />
+      <Item value="each" priority="27" />
+      <Item value="attr" priority="55" />
+      <Item value="val" priority="8" />
+      <Item value="addClass" priority="17" />
+      <Item value="removeClass" priority="8" />
+      <Item value="sub" priority="8" />
+      <Item value="substring" priority="8" />
+      <Item value="length" priority="8" />
+    </ItemStatistics>
+    <ItemStatistics item="JavaScriptSpecificContext">
+      <Item value="function" priority="64" />
+      <Item value="$" priority="129" />
+      <Item value="this" priority="21" />
+      <Item value="alert" priority="164" />
+      <Item value="if" priority="32" />
+      <Item value="else" priority="10" />
+      <Item value="for" priority="10" />
+      <Item value="i" priority="54" />
+      <Item value="chk" priority="21" />
+      <Item value="func" priority="10" />
+      <Item value="var" priority="32" />
+      <Item value="SelectID" priority="43" />
+      <Item value="urlParam" priority="21" />
+      <Item value="ppEN" priority="21" />
+      <Item value="ppCN" priority="43" />
+      <Item value="v" priority="10" />
+      <Item value="ppPrice" priority="21" />
+      <Item value="pp" priority="10" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@GK2010.Utility.RequestParam">
+      <Item value="InvoiceMailEmail" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GK2010.Model.Product">
+      <Item value="DefaultPrice" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpResponse">
+      <Item value="Redirect`0" priority="26" />
+      <Item value="Write`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Decimal">
+      <Item value="Parse`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GK2010.Model.MemberCartDetail">
+      <Item value="DiyTypeCn" priority="26" />
+      <Item value="DiyTypeEn" priority="26" />
+      <Item value="DiyTypePartsID" priority="26" />
+      <Item value="DiyTypePrice" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GK2010.Model.MemberOrder">
+      <Item value="OrderNum" priority="26" />
+      <Item value="UserID" priority="26" />
+      <Item value="TotalNum" priority="26" />
+      <Item value="ShipPrice" priority="26" />
+      <Item value="ProductPrice" priority="26" />
+      <Item value="OtherPrice" priority="26" />
+      <Item value="TotalPriceHasPay" priority="26" />
+      <Item value="TotalPrice" priority="26" />
+      <Item value="TotalJF" priority="26" />
+      <Item value="ConsigneeCompany" priority="26" />
+      <Item value="ConsigneeAddress" priority="53" />
+      <Item value="ConsigneePostCode" priority="26" />
+      <Item value="ConsigneeTelephone" priority="26" />
+      <Item value="InvoiceMailEmail" priority="26" />
+      <Item value="ConsigneeEmail" priority="26" />
+      <Item value="PayType" priority="26" />
+      <Item value="ShipType" priority="26" />
+      <Item value="InvoiceType" priority="26" />
+      <Item value="InvoiceCompany" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GK2010.Model.MemberCart">
+      <Item value="CartNum" priority="26" />
+      <Item value="UserID" priority="26" />
+      <Item value="TotalNum" priority="26" />
+      <Item value="ShipType" priority="53" />
+      <Item value="TotalShipPrice" priority="26" />
+      <Item value="TotalProductPrice" priority="53" />
+      <Item value="TotalOtherPrice" priority="26" />
+      <Item value="TotalPrice" priority="26" />
+      <Item value="TotalJF" priority="26" />
+      <Item value="ConsigneeCompany" priority="26" />
+      <Item value="ConsigneeRealName" priority="53" />
+      <Item value="ConsigneeProvince" priority="53" />
+      <Item value="ConsigneeCity" priority="53" />
+      <Item value="ConsigneeArea" priority="80" />
+      <Item value="ConsigneeAddress" priority="26" />
+      <Item value="ConsigneePostCode" priority="26" />
+      <Item value="ConsigneeTelephone" priority="26" />
+      <Item value="ConsigneeMobile" priority="53" />
+      <Item value="ConsigneeEmail" priority="26" />
+      <Item value="PayType" priority="53" />
+      <Item value="InvoiceType" priority="26" />
+      <Item value="InvoiceCompany" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GK2010.BLL.MemberOrder">
+      <Item value="Add`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@GK2010.Common.LoginHelper">
+      <Item value="UserID" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int64">
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

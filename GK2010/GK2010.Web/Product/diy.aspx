@@ -49,7 +49,7 @@
             ChangeOption("", "");
         }
         function ajaxSubmit() {
-            var Url = "/product_modelselect_handle.aspx";
+            var Url = "http://localhost:7755/product_modelselect_handle.aspx";
             var urlParam = "pid="+$("#litProductID").val()+"&ppid=";
             var pp = "";
             var ppCN = "";
@@ -72,14 +72,6 @@
             location.href = Url+"?"+urlParam;
              
         }
-        $(function () {
-            $(".ppradio").click(function () {
-                var chk = $("input[@type=radio][@checked]").val();
-                for (var i = 0; i < chk.Length; i++) {
-                    alert(chk[i]);
-                }
-            });
-        });
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">

@@ -9,6 +9,10 @@ namespace GK2010.Web.News
 {
     public partial class _default : PageBase
     {
+        #region 变量
+        public int I = 1;
+        #endregion
+
         #region Page_Load
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,146 +22,96 @@ namespace GK2010.Web.News
             //当前位置
             Navigator1.BindNavigator(EnumNavigator.News);
 
-            //获取首页显示内容
-            ChannelIndexCategory1.TableName = TableName.News;
+            Bind();
+        }
+        #endregion
+
+        private void Bind()
+        {
+            
+            int CategoryID = ConfigParam.CategoryID;
+            if (CategoryID==0)
+            {
+                CategoryID = 2;
+            } 
+           
+            //分页
+            int total = 0;
+            int PageIndex = ConfigParam.Page;
+            int PageSize = 15;
+
+            BLL.News bll = new BLL.News();
+            List<GK2010.Model.News> models = models = bll.GetList(PageSize, PageIndex, CategoryID.ToString(), "CategoryID", out total);
+            AspNetPager1.PageSize = PageSize;
+            AspNetPager1.RecordCount = total;
+            RepeaterList.DataSource = models;
+            RepeaterList.DataBind();
+            if (models.Count == 0)
+            {
+                AspNetPager1.Visible = false;
+            }
+            string Keywords = "";
+            string Type = "";
+            BLL.NewsCategory newsbll = new BLL.NewsCategory();
+            Repeater1.DataSource = newsbll.GetList(Keywords, Type);
+            Repeater1.DataBind();
 
             #region SEO
             Model.SEO modelSeo = new GK2010.Model.SEO();
-            BLL.ConfigSeo.Set("NewsIndex", modelSeo, out SeoTitle, out SeoKeywords, out SeoDescription);
+            modelSeo.CategoryTitle = BLL.NewsCategory.GetTitle(CategoryID);
+            BLL.ConfigSeo.Set("NewsList", modelSeo, out SeoTitle, out SeoKeywords, out SeoDescription);
             #endregion
 
-            #region 焦点新闻
-            BindHot();
-            #endregion
-
-            #region 新闻排行
-            BindHits();
-            #endregion
         }
-        #endregion
 
-        #region 焦点新闻
-        private void BindHot()
+        protected void RepeaterList_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
-            BLL.News bll = new BLL.News();
-            List<Model.News> models = bll.GetList("", "HotFlag_Top14");
-
-            int n = models.Count;
-
-            //第1条
-            if (n > 0)
+            switch (e.Item.ItemType)
             {
-                Model.News model = models[0];
-                string Url = string.Format(ConfigUrl.UrlNewsDetail, model.ID);
-                string Title = model.Title;
-                string TitleSub = StringHelper.SubString(model.Title, 30, 0);              
-                HyperLinkHotTitle1.Text = TitleSub;
-                HyperLinkHotTitle1.ToolTip = Title;
-                HyperLinkHotTitle1.NavigateUrl = Url;
+                case ListItemType.Item:
+                case ListItemType.AlternatingItem:
+                case ListItemType.EditItem:
+                    Model.News model = (Model.News)e.Item.DataItem;
+
+                    string Url = string.Format(ConfigUrl.UrlNewsDetail, model.ID);
+                    string Title = model.Title;
+                    string TitleSub = StringHelper.SubString( model.Title,60,1);
+                    string PostDate = DatetimeHelper.Parse( model.PostDate,"yyyy-MM-dd");
+                    string strStyle = "";
+                   
+                    //标题+时间
+                    Literal txtContent = (Literal)e.Item.FindControl("txtContent");                   
+  
+                        strStyle = " style='border-bottom:1px  #cccccc;padding-bottom:5px'";
                
-            }
+                    txtContent.Text = "<li " + strStyle + "><a target='_blank' title='" + Title + "' href='" + Url + "'>" + TitleSub + "</a><span>" + PostDate + "</span></li>";
+                    
+           
 
-            //第2-7条
-            n = models.Count;
-            if (n > 1)
-            {
-                if (n > 7) n = 7;
-                RepeaterListHotUp.DataSource = models.GetRange(1, n - 1);
-                RepeaterListHotUp.DataBind();
+                    break;
             }
-
-            //第8条
-            n = models.Count;
-            if (n > 7)
-            {
-                Model.News model = models[7];
-                string Url = string.Format(ConfigUrl.UrlNewsDetail, model.ID);
-                string Title = model.Title;
-                string TitleSub = StringHelper.SubString(model.Title, 30, 0);
-                HyperLinkHotTitle2.Text = TitleSub;
-                HyperLinkHotTitle2.ToolTip = Title;
-                HyperLinkHotTitle2.NavigateUrl = Url;
-            }
-
-            //第9-14条
-            n = models.Count;
-            if (n > 8)
-            {
-                if (n > 14) n = 14;
-                RepeaterListHotDown.DataSource = models.GetRange(8, n - 8);
-                RepeaterListHotDown.DataBind();
-            }
-            
         }
 
-        protected void RepeaterListHot_ItemDataBound(object sender, System.Web.UI.WebControls.RepeaterItemEventArgs e)
+        protected void AspNetPager1_PageChanged(object sender, EventArgs e)
+        {
+            ViewState["PageIndex"] = AspNetPager1.CurrentPageIndex.ToString();
+        }
+
+        protected void Repeater1_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
             switch (e.Item.ItemType)
             {
                 case ListItemType.Item:
                 case ListItemType.AlternatingItem:
                 case ListItemType.EditItem:
-                    Model.News model = (Model.News)e.Item.DataItem;
-
-                    //详细
-                    string Url = string.Format(ConfigUrl.UrlNewsDetail, model.ID);
-                    string Title = model.Title;
-                    string TitleSub = StringHelper.SubString(model.Title, 35, 0);
-                    HyperLink HyperLinkTitle = (HyperLink)e.Item.FindControl("HyperLinkTitle");
-                    HyperLinkTitle.Text = TitleSub;
-                    HyperLinkTitle.ToolTip = Title;
-                    HyperLinkTitle.NavigateUrl = Url;
-
-
-                    //类别
-                    Url = string.Format(ConfigUrl.UrlNewsList, model.CategoryID,0,1);
-                    Title = BLL.NewsCategory.GetTitle(model.CategoryID);
-                    TitleSub = StringHelper.SubString(Title, 8, 0);
-                    HyperLink HyperLinkCategory = (HyperLink)e.Item.FindControl("HyperLinkCategory");
-                    HyperLinkCategory.Text = "["+TitleSub+"]";
-                    HyperLinkCategory.ToolTip = Title;
-                    HyperLinkCategory.NavigateUrl = Url;
-
-                    break;
-            }
-        }
-        #endregion
-
-        #region 新闻排行
-        private void BindHits()
-        {
-            BLL.News bll = new BLL.News();
-            List<Model.News> models = bll.GetList("", "Hits_Top10");
-
-            //只取前5条
-            int n = models.Count;
-            if (n > 5) n = 5;
-            RepeaterListHits.DataSource = models.GetRange(0,n);
-            RepeaterListHits.DataBind();
-        }
-
-        protected void RepeaterListHits_ItemDataBound(object sender, System.Web.UI.WebControls.RepeaterItemEventArgs e)
-        {
-            switch (e.Item.ItemType)
-            {
-                case ListItemType.Item:
-                case ListItemType.AlternatingItem:
-                case ListItemType.EditItem:
-                    Model.News model = (Model.News)e.Item.DataItem;
-
-                    string Url = string.Format(ConfigUrl.UrlNewsDetail, model.ID);
-                    string Title = model.Title;
-                    string TitleSub = StringHelper.SubString(model.Title, 44, 0);
-
-                    HyperLink HyperLinkTitle = (HyperLink)e.Item.FindControl("HyperLinkTitle");
-                    HyperLinkTitle.Text = TitleSub;
-                    HyperLinkTitle.ToolTip = Title;
-                    HyperLinkTitle.NavigateUrl = Url;
-
+                    Model.NewsCategory model = (Model.NewsCategory)e.Item.DataItem;
+                    HyperLink newtitle = (HyperLink)e.Item.FindControl("HyperLink1");
+                    newtitle.Text = "<span>"+ model.Title +"</span>";
+                    newtitle.NavigateUrl=("default.aspx?CategoryID=" + model.ID);
                     break;
             }
         }
 
-        #endregion
+
     }
 }
