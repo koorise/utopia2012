@@ -34,3 +34,30 @@ D:\2011.09\GK2010\GK2010.DAL\bin\Debug\GK2010.Utility.pdb
 D:\2011.09\GK2010\GK2010.DAL\obj\Debug\ResolveAssemblyReference.cache
 D:\2011.09\GK2010\GK2010.DAL\obj\Debug\GK2010.DAL.dll
 D:\2011.09\GK2010\GK2010.DAL\obj\Debug\GK2010.DAL.pdb
+D:\projects\GK2010_rc\GK2010.DAL\bin\Debug\GK2010.DAL.dll
+D:\projects\GK2010_rc\GK2010.DAL\bin\Debug\GK2010.DAL.pdb
+D:\projects\GK2010_rc\GK2010.DAL\bin\Debug\GK2010.Model.dll
+D:\projects\GK2010_rc\GK2010.DAL\bin\Debug\GK2010.Utility.dll
+D:\projects\GK2010_rc\GK2010.DAL\bin\Debug\GK2010.Model.pdb
+D:\projects\GK2010_rc\GK2010.DAL\bin\Debug\GK2010.Utility.pdb
+D:\projects\GK2010_rc\GK2010.DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\GK2010_rc\GK2010.DAL\obj\Debug\GK2010.DAL.dll
+D:\projects\GK2010_rc\GK2010.DAL\obj\Debug\GK2010.DAL.pdb
+C:\Documents and Settings\Administrator\桌面\GK2010_rc\GK2010.DAL\bin\Debug\GK2010.DAL.dll
+C:\Documents and Settings\Administrator\桌面\GK2010_rc\GK2010.DAL\bin\Debug\GK2010.DAL.pdb
+C:\Documents and Settings\Administrator\桌面\GK2010_rc\GK2010.DAL\bin\Debug\GK2010.Model.dll
+C:\Documents and Settings\Administrator\桌面\GK2010_rc\GK2010.DAL\bin\Debug\GK2010.Utility.dll
+C:\Documents and Settings\Administrator\桌面\GK2010_rc\GK2010.DAL\bin\Debug\GK2010.Model.pdb
+C:\Documents and Settings\Administrator\桌面\GK2010_rc\GK2010.DAL\bin\Debug\GK2010.Utility.pdb
+C:\Documents and Settings\Administrator\桌面\GK2010_rc\GK2010.DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\GK2010_rc\GK2010.DAL\obj\Debug\GK2010.DAL.dll
+C:\Documents and Settings\Administrator\桌面\GK2010_rc\GK2010.DAL\obj\Debug\GK2010.DAL.pdb
+D:\2012\GK2010\GK2010.DAL\bin\Debug\GK2010.DAL.dll
+D:\2012\GK2010\GK2010.DAL\bin\Debug\GK2010.DAL.pdb
+D:\2012\GK2010\GK2010.DAL\bin\Debug\GK2010.Model.dll
+D:\2012\GK2010\GK2010.DAL\bin\Debug\GK2010.Utility.dll
+D:\2012\GK2010\GK2010.DAL\bin\Debug\GK2010.Model.pdb
+D:\2012\GK2010\GK2010.DAL\bin\Debug\GK2010.Utility.pdb
+D:\2012\GK2010\GK2010.DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\2012\GK2010\GK2010.DAL\obj\Debug\GK2010.DAL.dll
+D:\2012\GK2010\GK2010.DAL\obj\Debug\GK2010.DAL.pdb

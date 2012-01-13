@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ZPageBase_MainChannel.master" AutoEventWireup="true"
     CodeBehind="list.aspx.cs" Inherits="GK2010.Web.Product.list" %>
+ 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">    
     <title><%=SeoTitle %></title>
@@ -15,12 +16,14 @@
         <div class="left mar5 ">
             <!--product left start-->
             <gk:ProductLeft ID="ProductLeft1" runat="server" />
+            <gk:ProductBrand ID="ProductBrand1" runat="server" />
             <!--product left end-->
         </div>
         <!-- right start -->
         <div class="right_cont ">
             <div class="base_infor ">
                 <!--product list start-->
+                
                 <gk:ProductList ID="ProductList1" runat="server" />
                 <!--product list end-->
                 <div class="product_list">

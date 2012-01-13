@@ -6,10 +6,18 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="/css/product_detail.css" rel="stylesheet" type="text/css" />
    <link href="/Css/page.css" rel="Stylesheet" type="text/css" />
+   <link href="/Css/jqzoom.css" rel="Stylesheet" type="text/css" />
+   <script src="/JavaScript/jquery.jqzoom.js" type="text/javascript"></script>
     <script language="javascript" type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             showPic(1);
-        });
+
+            $(".jqzoom").jqueryzoom({
+                xzoom: 410,
+                yzoom: 310,
+                position: "right"
+            });
+    });
 
         function changeTab(index) {
             for (var i = 1; i <= 2; i++) {
@@ -25,6 +33,7 @@
             try {
                 var src = $("#imgPictureSmall" + num).attr("bigImg");
                 $("#<%=imgPictureBig.ClientID %>").attr("src", src);
+                $("#<%=imgPictureBig.ClientID %>").attr("jqimg", $("#imgPictureSmall"+ num).attr("normalimg"));
 
                 $("ul.thumb li").removeClass("current");
                 $("ul.thumb li").addClass("unselect");
@@ -34,8 +43,6 @@
             }
             catch (e) { }
         }
-
-
      
     </script>
     <title><%=SeoTitle %></title>
@@ -44,11 +51,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
         <div class="main">
+
+        <gk:Navigator ID="Navigator1" runat="server" />
+
             <!--left -->
             <div class="left mar5">
                 <userControl2:MemberProductPayHistory ID="memberPayHistory" runat="server" />
                 <userControl1:MemberProductBrowse runat="server" ID="MemberProductBrowse"/>
-                <userControl3:ProductHotSale runat="server" ID="ProductHotSale" />
+                <userControl3:ProductHotSale runat="server" ID="ProductHotSale" /> 
                <userControl:ProductBrowse ID="ProductBrowse1" runat="server" />
             </div>
             <!--left end -->
@@ -58,14 +68,14 @@
                     <div class="h1_title"><h1><asp:Literal ID="txtTitle" runat="server"></asp:Literal></h1></div>                    
                     <div class="base_left_pc">
                         <div class="gallery">
-                            <div class="booth picc s310">
+                            <div class="jqzoom booth picc s310">
                                 <asp:Image ID="imgPictureBig" runat="server" Height="310" Width="310" />
                             </div>
                             <ul class="thumb clearfix">
                                  <asp:Repeater ID="RepeaterListPicture" runat="server">
                                     <ItemTemplate>
                                         <li onmouseover="showPic(<%=I %>)" id="liPic<%=I%>" style="cursor: pointer">
-                                            <div class="s50"><img src="<%#Eval("PictureSmall") %>" bigimg="<%#Eval("PictureBig") %>" id="imgPictureSmall<%=I++%>" /></div>
+                                            <div class="s50"><img src="<%#Eval("PictureSmall") %>" bigimg="<%#Eval("PictureBig") %>" normalimg="<%#Eval("PictureNormal") %>" id="imgPictureSmall<%=I++%>" /></div>
                                         </li>
                                     </ItemTemplate>
                                 </asp:Repeater>
@@ -84,10 +94,6 @@
                             <li>商品评分：<span><img src="/images/star0<%=EvaluateZongSorce %>.jpg" alt="" /></span> <span class="blue">已有<%=EvaluateZongCount%>人评价</span></li>
                             <li>成为VIP可享受更多优惠 什么是VIP? <span>
                                 <img src="/images/vip02.jpg" alt="" /></span> </li>
-                            <li class="B blue">特色服务</li>
-                            <li class="online_service1">
-                                <img src="/images/word02.jpg" alt="" />
-                            </li>
                             <li>
                                 <span>
                                 <asp:ImageButton ID="iBSelfHelpSelectType" runat="server" 
@@ -375,64 +381,24 @@
                     相关产品</h2>
             </div>
             <div class="buy_cont5">
-                <dl>
-                    <dt class="s120 pic"><a href=" " target="_blank">
-                        <img src="/images/chanp_pc01.jpg" alt="MOTO XT702"></a></dt>
-                    <dt class="good-name"><a href=" " target="_blank">MOTO XT702</a></dt>
-                    <dd class="good-market-price">
-                        市场价：<s>4080</s></dd>
-                    <dd class="good-price">
-                        <span>3138</span></dd>
-                </dl>
-                <dl>
-                    <dt class="s120 pic"><a href=" " target="_blank">
-                        <img src="/images/chanp_pc01.jpg" alt="MOTO XT702"></a></dt>
-                    <dt class="good-name"><a href=" " target="_blank">MOTO XT702</a></dt>
-                    <dd class="good-market-price">
-                        市场价：<s>4080</s></dd>
-                    <dd class="good-price">
-                        <span>3138</span></dd>
-                </dl>
-                <dl>
-                    <dt class="s120 pic"><a href=" " target="_blank">
-                        <img src="/images/chanp_pc01.jpg" alt="MOTO XT702"></a></dt>
-                    <dt class="good-name"><a href=" " target="_blank">MOTO XT702</a></dt>
-                    <dd class="good-market-price">
-                        市场价：<s>4080</s></dd>
-                    <dd class="good-price">
-                        <span>3138</span></dd>
-                </dl>
-                <dl>
-                    <dt class="s120 pic"><a href=" " target="_blank">
-                        <img src="/images/chanp_pc01.jpg" alt="MOTO XT702"></a></dt>
-                    <dt class="good-name"><a href=" " target="_blank">多普达S910W 3G WIFI </a></dt>
-                    <dd class="good-market-price">
-                        市场价：<s>4080</s></dd>
-                    <dd class="good-price">
-                        <span>3138</span></dd>
-                </dl>
-                <dl>
-                    <dt class="s120 pic"><a href=" " target="_blank">
-                        <img src="/images/chanp_pc01.jpg" alt="MOTO XT702"></a></dt>
-                    <dt class="good-name"><a href=" " target="_blank">多普达S910W 3G WIFI </a></dt>
-                    <dd class="good-market-price">
-                        市场价：<s>4080</s></dd>
-                    <dd class="good-price">
-                        <span>3138</span></dd>
-                </dl>
-                <dl>
-                    <dt class="s120 pic"><a href=" " target="_blank">
-                        <img src="/images/chanp_pc01.jpg" alt="MOTO XT702"></a></dt>
-                    <dt class="good-name"><a href=" " target="_blank">多普达S910W 3G WIFI </a></dt>
-                    <dd class="good-market-price">
-                        市场价：<s>4080</s></dd>
-                    <dd class="good-price">
-                        <span>3138</span></dd>
-                </dl>
+                <asp:Repeater ID="rptRelatedProducts" runat="server" 
+                        onitemdatabound="rptRelatedProducts_ItemDataBound">
+                    <ItemTemplate>
+                    <dl>
+                        <dt class="s120 pic">
+                            <asp:HyperLink ID="lnkThumb" runat="server">Thumb</asp:HyperLink></dt>
+                        <dt class="good-name"><asp:HyperLink ID="lnkTitle" runat="server" Text="Title"></asp:HyperLink></dt>
+                        <dd class="good-market-price">
+                            市场价：<s><asp:Literal ID="litMarketPrice" runat="server">Market price</asp:Literal></s></dd>
+                        <dd class="good-price">
+                            <span>
+                                <asp:Literal ID="litGoodPrice" runat="server">Good price</asp:Literal></span></dd>
+                    </dl>
+                    </ItemTemplate>
+                </asp:Repeater>
             </div>
         </div>
-        </div>
-        </div>
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="BootOther" runat="server">
 </asp:Content>

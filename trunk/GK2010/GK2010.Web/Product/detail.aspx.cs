@@ -33,21 +33,22 @@ namespace GK2010.Web.Product
         #region Page_Load
         protected void Page_Load(object sender, EventArgs e)
         {
-                ZPageBase_MainChannel.EnumNavigator = EnumNavigator.Product;
+            Navigator1.BindNavigator(EnumNavigator.Product);
+            ZPageBase_MainChannel.EnumNavigator = EnumNavigator.Product;
 
-                int ProductID = ConfigParam.ID;
-                if (ProductID != 0)
-                    Utility.CookieHelper.addcookie("PROID", ProductID.ToString());
+            int ProductID = ConfigParam.ID;
+            if (ProductID != 0)
+                Utility.CookieHelper.addcookie("PROID", ProductID.ToString());
                
 
-                //显示详细
-                ShowInfo(ProductID);
-                //显示图片
-                ShowPic(ProductID);
-                //显示评分
-                showSorce(ProductID);
-                //显示评价内容
-                showEvaluate(ProductID);
+            //显示详细
+            ShowInfo(ProductID);
+            //显示图片
+            ShowPic(ProductID);
+            //显示评分
+            showSorce(ProductID);
+            //显示评价内容
+            showEvaluate(ProductID);
         }
         #endregion
 
@@ -111,6 +112,8 @@ namespace GK2010.Web.Product
                     // if (mod_mpb != null)
                        // Utility.MessageBox.ShowAlert(this.Page, mpb.Add(mod_mpb).ToString());
                 }
+
+                 BindRelatedProducts();
 
                 #region 收藏人气
                 Product_Favorites_Count = GK2010.BLL.MemberProductFavorites.GetCount(model.CategoryID, model.ID);
@@ -538,7 +541,43 @@ namespace GK2010.Web.Product
         }
         #endregion
 
-        
+        #region Related Products
 
+        private void BindRelatedProducts()
+        {
+            BLL.Product bll = new BLL.Product();
+            List<GK2010.Model.Product> models = bll.GetList("", "Commend_Top6");
+            rptRelatedProducts.DataSource = models;
+            rptRelatedProducts.DataBind();
+        }
+
+        protected void rptRelatedProducts_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        {
+            switch (e.Item.ItemType)
+            {
+                case ListItemType.Item:
+                case ListItemType.AlternatingItem:
+                case ListItemType.EditItem:
+                    Model.Product model = (Model.Product)e.Item.DataItem;
+                    string url = String.Format(ConfigUrl.UrlProductDetail, model.ID);
+
+                    HyperLink lnkTitle = (HyperLink)e.Item.FindControl("lnkTitle");
+                    lnkTitle.Text = model.Title;
+                    lnkTitle.NavigateUrl = url;
+
+                    HyperLink lnkThumb = (HyperLink)e.Item.FindControl("lnkThumb");
+                    lnkThumb.Text = "<img src=\"" + model.PictureSmall + "\" alt=\"" + model.Title + "\" />";
+                    lnkThumb.NavigateUrl = url;
+
+                    Literal litMarketPrice = (Literal)e.Item.FindControl("litMarketPrice");
+                    litMarketPrice.Text = Convert.ToString(model.DefaultPriceOld);
+
+                    Literal litGoodPrice = (Literal)e.Item.FindControl("litGoodPrice");
+                    litGoodPrice.Text = Convert.ToString(model.DefaultPrice);
+                    break;
+            }
+        }
+
+        #endregion
     }
 }

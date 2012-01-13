@@ -6,6 +6,8 @@ using System.Web.UI.WebControls;
 using System.Text;
 using GK2010.Utility;
 using GK2010.Common;
+using GK2010.BLL;
+
 namespace GK2010.Web.Controls
 {
     public partial class ControlProductRelation : System.Web.UI.UserControl
@@ -28,7 +30,6 @@ namespace GK2010.Web.Controls
         #region Page_Load
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
         #endregion
         

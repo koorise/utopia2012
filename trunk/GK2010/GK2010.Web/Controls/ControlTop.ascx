@@ -29,10 +29,6 @@
         </div>
         <div class="top_right">
             <div class="top_tel">
-                <ul>
-                    <li><span>适用行业：</span>化工 | 冶金 | 电力 | 机械</li>
-                    <li><span>适用介质：</span>酸 | 碱 | 水 | 天然气 ...</li>
-                </ul>
             </div>
             <div class="nav">
                 <asp:Literal ID="txtNavigator" runat="server"></asp:Literal>

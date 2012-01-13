@@ -22,6 +22,8 @@ namespace GK2010.Web.Product
             BindCategory();
 
             BindABC();
+
+            BindProgram();
         }
         #endregion
 
@@ -149,6 +151,36 @@ namespace GK2010.Web.Product
             }
         }
         #endregion
+
+        #endregion
+
+        #region 方案中心
+
+        private void BindProgram()
+        {
+            BLL.Program bll = new BLL.Program();
+            rptProgram.DataSource = bll.GetList("", "Hits_Top10");
+            rptProgram.DataBind();
+        }
+
+        protected void rptProgram_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        {
+            switch (e.Item.ItemType)
+            {
+                case ListItemType.Item:
+                case ListItemType.AlternatingItem:
+                case ListItemType.EditItem:
+                    Model.Program model = (Model.Program)e.Item.DataItem;
+                    string url = string.Format(ConfigUrl.UrlProgramDetail, model.ID);
+
+                    HyperLink lnkTitle = (HyperLink)e.Item.FindControl("lnkTitle");
+                    lnkTitle.Text = StringHelper.SubString(model.Title, 32, 0);
+                    lnkTitle.NavigateUrl = url;
+                    lnkTitle.ToolTip = model.Title;
+                    lnkTitle.Target = "_blank";
+                    break;
+            }
+        }
 
         #endregion
     }

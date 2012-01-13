@@ -128,6 +128,7 @@ select
 {
 	clear: both;
 	width: 960px;
+    height:auto;
 }
 
 .hearder
@@ -264,7 +265,7 @@ select
 
 .top_tel
 {
-	background: url(/images/tel01.jpg) no-repeat center;
+	background: url(/images/tel01.jpg) no-repeat center right;
 	height: 54px;
 	width: 720px;
 }

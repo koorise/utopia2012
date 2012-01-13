@@ -113,21 +113,22 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="right1 mdT8">
                     <h2>
-                        <span><a href="">更多</a></span>方案中心</h2>
+                        <span><a href="/Program/" target="_blank">更多</a></span>方案中心</h2>
                     <div class="bd">
                         <ul>
-                            <li><a href="">秋季爱车防潮保护妙招</a></li>
-                            <li><a href="">十一黄金周成都车商服务优</a></li>
-                            <li><a href="">惠一览 深入烧机油原因</a></li>
-                            <li><a href="">分：燃油问题 节后迎汽车</a></li>
-                            <li><a href="">保养高峰 保养提前预约更</a></li>
-                            <li><a href="">省时 服务升级 长安铃木</a></li>
-                            <li><a href="">秋季爱车防潮保护妙招</a></li>
+                            <asp:Repeater ID="rptProgram" runat="server" 
+                                onitemdatabound="rptProgram_ItemDataBound">
+                                <ItemTemplate>
+                                <li><asp:HyperLink ID="lnkTitle" runat="server">Program title</asp:HyperLink></li>
+                                </ItemTemplate>
+                            </asp:Repeater>
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>        
     </div>

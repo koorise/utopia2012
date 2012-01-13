@@ -27,6 +27,17 @@ namespace GK2010.Web.Controls
             {
                 Url = ConfigUrl.UrlProduct;
                 txtNavigator.Text = strSep + "<a href='" + Url + "'>产品中心</a>";
+
+                if (ConfigParam.ID > 0)
+                {
+                    BLL.Product bll = new GK2010.BLL.Product();
+                    Model.Product model = bll.GetModel(ConfigParam.ID);
+                    if (model != null)
+                    {
+                        txtNavigator.Text += strSep + "<span>" + BLL.ProductCategory.GetTitle(model.CategoryID) + "</span>";
+                        txtNavigator.Text += strSep + "<span>产品详情</span>";
+                    }
+                }
             }
             #endregion
 

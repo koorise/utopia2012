@@ -1397,6 +1397,13 @@
     <Compile Include="Controls\ControlNavigator.ascx.designer.cs">
       <DependentUpon>ControlNavigator.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ControlProductBrand.ascx.cs">
+      <DependentUpon>ControlProductBrand.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlProductBrand.ascx.designer.cs">
+      <DependentUpon>ControlProductBrand.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ControlProductBrowse.ascx.cs">
       <DependentUpon>ControlProductBrowse.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1881,11 +1888,11 @@
     <Compile Include="Service\ProductCategory_Handle.aspx.designer.cs">
       <DependentUpon>ProductCategory_Handle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Service\ProductMemberDiscount.aspx.cs">
+    <Compile Include="UserFiles\ProductMemberDiscount.aspx.cs">
       <DependentUpon>ProductMemberDiscount.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Service\ProductMemberDiscount.aspx.designer.cs">
+    <Compile Include="UserFiles\ProductMemberDiscount.aspx.designer.cs">
       <DependentUpon>ProductMemberDiscount.aspx</DependentUpon>
     </Compile>
     <Compile Include="Service\ProductParts_Handle.aspx.cs">
@@ -2016,12 +2023,16 @@
     <Content Include="cartDel.aspx" />
     <Content Include="Controls\ControlMemberProductBrowse.ascx" />
     <Content Include="Controls\ControlMemberProductPayHistory.ascx" />
+    <Content Include="Controls\ControlProductBrand.ascx" />
     <Content Include="Controls\ControlProductBrowse.ascx" />
     <Content Include="Controls\ControlProductHotSale.ascx" />
+    <Content Include="Css\jqzoom.css" />
     <Content Include="JavaScript\jquery-1.4.2.js" />
     <Content Include="JavaScript\jquery.CartNum.js" />
+    <Content Include="JavaScript\jquery.jqzoom.js" />
     <Content Include="JavaScript\MemberCart_checkout.js" />
     <Content Include="JavaScript\ProductFavorites.js" />
+    <Content Include="JavaScript\swfobject.js" />
     <Content Include="login.aspx" />
     <Content Include="MemberCartNum_UpdateNum.aspx" />
     <Content Include="MemberCart_checkout.aspx" />
@@ -2033,7 +2044,9 @@
     <Content Include="MemberProductFavorites_handle.aspx" />
     <Content Include="Product\MemberProductEvaluateList.aspx" />
     <Content Include="product_modelselect_handle.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Admin\Add.aspx" />
@@ -2990,7 +3003,7 @@
     <Content Include="register_step3.aspx" />
     <Content Include="Service\MemberHandle.aspx" />
     <Content Include="Service\ProductCategory_Handle.aspx" />
-    <Content Include="Service\ProductMemberDiscount.aspx" />
+    <Content Include="UserFiles\ProductMemberDiscount.aspx" />
     <Content Include="Service\ProductParts_Handle.aspx" />
     <Content Include="Service\Province_City_Handle.aspx" />
     <Content Include="UserFiles\2010-12-07\3.jpg" />

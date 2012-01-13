@@ -14,6 +14,7 @@
         <div class="left mar5 ">
             <!--product left start-->
             <gk:ProductLeft ID="ProductLeft1" runat="server" />
+            <gk:ProductBrand ID="ProductBrand1" runat="server" />
             <!--product left end-->
         </div>
         <!-- right start -->

@@ -1086,3 +1086,101 @@ dt.good-name a, .good-name a:hover
 {
 	margin: 0 5px;
 }
+
+/*- Menu Tabs 1--------------------------- */ 
+
+
+   .tabs1 {
+     float:left;
+      width:100%;
+	  background:#F4F7FB;
+      font-size:14px;
+      font-weight:bold;
+      line-height:normal;
+      color: #0066FF; 
+	  border-bottom:1px solid #BCD2E6;
+	 height:36px;
+      }
+   .tabs1 ul {
+	  margin:0;
+	  padding:15px 10px 0 50px;
+	  list-style:none;
+	   height:auto;
+      }
+    .tabs1 li {
+      display:inline;
+      margin:0;
+      padding:0;
+       height:auto;
+      }
+   .tabs1 a
+{
+    float: left;
+    background: url('../Images/icons/tableft1.gif') no-repeat left top;
+    margin: 0;
+    padding: 0 0 0 4px;
+    text-decoration: none;
+    height:22px;
+}
+   .tabs1 a span
+{
+    float: left;
+    display: block;
+    background: url('../Images/icons/tabright1.gif') no-repeat right top;
+    padding:5px 15px 4px 15px;
+    color: #0066FF;
+}
+    /* Commented Backslash Hack hides rule from IE5-Mac \*/
+    .tabs1 a span {float:none;}
+    /* End IE5-Mac hack */
+   .tabs a:hover span {
+      color:#0066FF;
+      }
+   .tabs1 a:hover {
+      background-position:0% -42px;
+      }
+  .tabs1 a:hover span {
+      background-position:100% -42px;
+      }
+      
+ .news_intro {
+	CLEAR: both;
+	background-color:#F4F7FB;
+	 width:100%;
+}
+ 
+.news_intro SPAN {
+	WIDTH: 100%; FLOAT: left; CLEAR: both
+}
+.news_intro .top_bg
+{
+     width:100%;
+    background-color:#F4F7FB;
+    /*background: url('../Images/news_bg01.gif') no-repeat 50% bottom;*/
+    height: 10px;
+}
+.news_intro .middle_bg
+{
+     width:100%;
+    background-color:#F4F7FB;
+    /* background: url('../Images/news_bg02.gif'no-repeat 50%);*/
+    height: 22px;
+    background-repeat: no-repeat;
+}
+.news_intro .bottom_bg
+{
+    width:100%;
+    background-color:#F4F7FB;
+   /* background: url('../Images/news_bg03.gif') no-repeat 50% top;*/
+    height: 10px;
+}
+.lan_title{padding:10px;float:left;clear:both;color:#f60;font-size:14px;width:100px;text-align:left;}
+
+
+.banner
+{
+	float:right;
+    width:100%;
+   
+
+}
