@@ -11,7 +11,7 @@ public partial class Management_imgList : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        Response.Cache.SetCacheability(System.Web.HttpCacheability.NoCache);
+        this.Response.Cache.SetNoStore();
         string connStr =
    @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Server.MapPath("~/App_Data/Database.mdb") +
    ";Persist Security Info=False;";
